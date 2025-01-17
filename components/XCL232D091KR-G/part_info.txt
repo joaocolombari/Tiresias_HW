@@ -1,0 +1,9 @@
+Manufacturer=Torex
+PartNumber=XCL232D091KR-G
+PartCategory=Integrated Circuit
+PackageCategory=Other
+PinCount=9
+Version=7.1
+Released=2022-01-13 23:33:34
+Downloaded=2025-01-15 17:37:41
+3D=Y

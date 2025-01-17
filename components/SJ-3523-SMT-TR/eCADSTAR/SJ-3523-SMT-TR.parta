@@ -1,0 +1,70 @@
+(Japanese_coding: sjis)
+(function "ECS_12878433"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2020-09-13-15:56:13)
+    (utime 2024-12-17-09:13:50)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+        (port "3" (symbPinId 3) (portType INOUT))
+    )
+    (property "symbolName" "SJ-3523-SMT-TR")
+)
+
+
+(pinAssign "ECS_12878433"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2020-09-13-15:56:13)
+    (utime 2024-12-17-09:13:50)
+    (interface
+        (port "1" (symbPinId 1) (portName "SLEEVE") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "TIP") (portType INOUT))
+        (port "3" (symbPinId 3) (portName "RING") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_12878433")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+                (port "3" (match "3"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "SJ-3523-SMT-TR")
+)
+
+
+(part "SJ-3523-SMT-TR"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2020-09-13-15:56:13)
+    (utime 2024-12-17-09:13:50)
+    (packageRef "SJ-3523-SMT-TR")
+    (pinAssignRef "ECS_12878433")
+    (interface
+        (port "1" (symbPinId 1) (portName "SLEEVE") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "TIP") (portType INOUT))
+        (port "3" (symbPinId 3) (portName "RING") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "YES")
+    (property "refDesPrefix" "J")
+    (property "description" "3.5 mm, Stereo, Right Angle, Surface Mount (SMT), 3 Conductors, 0 Internal Switches, Audio Jack Connector")
+    (property "Mouser_Part_Number" "490-SJ-3523-SMT-TR")
+    (property "Mouser_Price/Stock" "https://www.mouser.co.uk/ProductDetail/CUI-Devices/SJ-3523-SMT-TR?qs=WyjlAZoYn51zOHzJ3r4ZRA%3D%3D")
+    (property "Manufacturer_Name" "Same Sky")
+    (property "Manufacturer_Part_Number" "SJ-3523-SMT-TR")
+    (property "Datasheet_Link" "https://www.sameskydevices.com/product/resource/supplyframepdf/sj-352x-smt.pdf")
+    (property "compAreaTopHeight" 5.2)
+)
+
+

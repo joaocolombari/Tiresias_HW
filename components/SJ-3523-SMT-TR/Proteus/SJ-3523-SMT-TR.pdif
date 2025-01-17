@@ -1,0 +1,158 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "SJ-3523-SMT-TR"
+   (description "3.5 mm, Stereo, Right Angle, Surface Mount (SMT), 3 Conductors, 0 Internal Switches, Audio Jack Connector")
+   (family "CON")
+   (package "SJ3523SMTTR")
+   (attribute "Datasheet Link" "https://www.sameskydevices.com/product/resource/supplyframepdf/sj-352x-smt.pdf")
+   (attribute "Geometry.Height" "5.2mm")
+   (attribute "Mouser Part Number" "490-SJ-3523-SMT-TR")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/CUI-Devices/SJ-3523-SMT-TR?qs=WyjlAZoYn51zOHzJ3r4ZRA%3D%3D")
+   (attribute "Manufacturer_Name" "Same Sky")
+   (attribute "Manufacturer_Part_Number" "SJ-3523-SMT-TR")
+   (gate
+    (symbol "SJ-3523-SMT-TR")
+    (pin "SLEEVE" 1 PS)
+    (pin "TIP" 2 PS)
+    (pin "RING" 3 PS)
+   )
+  )
+  (symbol "SJ-3523-SMT-TR"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 1000 100) (pt 1000 -200) (pt 200 -200) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1200 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "SJ3523SMTTR"
+   (units MM)
+   (layer TASM
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -2.5 2.95)
+      (pt 14.5 2.95)
+      (pt 14.5 -3.05)
+      (pt -2.5 -3.05)
+      (pt -2.5 2.95))))
+   (layer OCCA
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -3.5 6.1)
+      (pt 18.1 6.1)
+      (pt 18.1 -6.9)
+      (pt -3.5 -6.9)
+      (pt -3.5 6.1))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt 2.1 -5.8)
+      (arc (pt 2.100 -5.800) (pt 2.100 -5.900) (pt 2.300 -5.700) (start 180.0) (sweep 180.0))
+      (pt 2.3 -5.8)
+      (arc (pt 2.300 -5.800) (pt 2.100 -5.900) (pt 2.300 -5.700) (start 180.0) (sweep .0))
+      (pt 2.1 -5.8))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt 2.9 2.95)
+      (pt -2.5 2.95)
+      (pt -2.5 -3.05)
+      (pt 0.9 -3.05))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt 5.9 2.95)
+      (pt 14.5 2.95))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt 13.5 -3.05)
+      (pt 14.5 -3.05)
+      (pt 14.5 -1.5))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt 3.9 -3.05)
+      (pt 10.1 -3.05))))
+   (layer TSLK
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt 14.5 3)
+      (pt 14.5 -1.5))))
+   (leg 1 (pt 2.400 -3.700) (padstack 0))
+   (leg 2 (pt 11.800 -3.800) (padstack 2))
+   (leg 3 (pt 4.400 3.700) (padstack 0))
+   (leg MH1 (pt 3.500 0.000) (padstack 4))
+   (leg MH2 (pt 10.500 0.000) (padstack 5))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 2.200 2.800 0 0 90.000))
+   )
+   (padstack 2
+    (plated false)
+    (pad (layer TCOP) (rectf 2.600 2.800 0 0 0.000))
+   )
+   (padstack 4
+    (hole 1.7)
+    (plated false)
+    (pad (layer TCOP) (round 0.850))
+    (pad (layer INNER) (round 0.850))
+    (pad (layer BCOP) (round 0.850))
+   )
+   (padstack 5
+    (hole 1.7)
+    (plated false)
+    (pad (layer TCOP) (round 0.850))
+    (pad (layer INNER) (round 0.850))
+    (pad (layer BCOP) (round 0.850))
+   )
+   (model "SJ-3523-SMT-TR.stp"
+    (euler -90 0 90)
+    (offset 7.400000095367432 0 2.700000047683716)
+   )
+  )
+ )
+)

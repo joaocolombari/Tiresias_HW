@@ -1,0 +1,501 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 9em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD24\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">08/03/2024</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">13:45:46</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc" class="file"><acronym title="C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc">C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">59</td></tr>
+</table>
+</td>
+</table><a name="IDTYTQ4WXYVCSAJHATEW51EOJNTOPPCE3SAML2PPDTNDXYPZPIXWME"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDP3M2EWABTXBWGV1JOMGK5GTEBOMI4V44KVGQMWDDUA4P303KXD4I">Clearance Constraint (Gap=0.125mm) ((InNamedPolygon('Top_Layer-GND')) or (InNamedPolygon('Mid_Layer_1-GND')) or (InNamedPolygon('Mid_Layer_2-GND')) or (InNamedPolygon('Bottom_Layer-GND'))),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDCU3CJQLU5EMHDHPLGWMZX2ZAHLAF4CCNFTIKEHNQTLQKEAYWHEYN">Clearance Constraint (Gap=0.127mm) ((InNamedPolygon('Top_Layer-GND')) or (InNamedPolygon('Mid_Layer_1-GND')) or (InNamedPolygon('Mid_Layer_2-GND')) or (InNamedPolygon('Bottom_Layer-GND'))),(InNet('RF'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID0MIFKIGZMFOUIIDGU1RUG5JRLGRVW1HU1GE5FDNJQKAOG3XRRGXL">Clearance Constraint (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDBOM1VLJTTIKGEYQ33CQFYRSH4ONKGQDF5EPBQ2FZRK103XFP4H2M">Clearance Constraint (Gap=0.105mm) (OnTopLayer),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDF2EZK2OFDILQFHR2VPIV0ZGWTGFNVNMYCMUYHYL3P2WTRZB2E0VE">Clearance Constraint (Gap=0.1mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDNIOQU5YNMJOCDEYBGIYNHLC1OEXAWCVYRMD3JJDCLVHO1ZFZE5RF">Clearance Constraint (Gap=0.1mm) (AsMM(ViaDiameter) &lt; 0.3),(AsMM(ViaDiameter) &lt; 0.3)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDCIOMGMROALJWODRDXYQGET03QHWPDH3Q2WM5T4N0RFCWE0YUUYKE">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDS1OMJVQHXP0VDTATK5YTFS4HJNS0L5DDG1ZUP0PYKKZDIPWRQPVO">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">59</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDBRBPM3U4ENBWNXOMP4HYBIGH0I3HPND03XA1NDUMS1N3RRQJPPL">Width Constraint (Min=0.1mm) (Max=1.27mm) (Preferred=0.152mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDZRLBVHOYXFIYLIKG1XQJQXWHTH3AUW3MPQQ4FUMDVY0PIZLIAAKH">Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDMFFOA3VF1OQO3XAHF3P02XGGDXT5X0V3VVDIIHAO320OFVDHLSO">Hole Size Constraint (Min=0.1mm) (Max=4.064mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID2BFMGWXAFMZZIFZ44CMCYW4GOPCJWPPGV1TUUMNHIKGTLFGFSQS">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">59</td>
+</tr>
+</table><br><a name="IDS1OMJVQHXP0VDTATK5YTFS4HJNS0L5DDG1ZUP0PYKKZDIPWRQPVO"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Un-Routed Net Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=272.598mil|Location2.X=298.267mil|Location1.Y=388.741mil|Location2.Y=440.945mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=272.598mil|Location2.X=298.267mil|Location1.Y=388.741mil|Location2.Y=440.945mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C10-1(7.25mm,10.25mm) on Top Layer And Via (7.25mm,10.95mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=421.22mil|Location2.X=439.016mil|Location1.Y=177.323mil|Location2.Y=240.197mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=421.22mil|Location2.X=439.016mil|Location1.Y=177.323mil|Location2.Y=240.197mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C8-1(10.91mm,5.875mm) on Top Layer And Pad C1-1(10.925mm,4.715mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=421.221mil|Location2.X=466.575mil|Location1.Y=154.488mil|Location2.Y=193.937mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=421.221mil|Location2.X=466.575mil|Location1.Y=154.488mil|Location2.Y=193.937mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C1-1(10.925mm,4.715mm) on Top Layer And Via (11.525mm,4.25mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=187.008mil|Location2.X=212.598mil|Location1.Y=351.378mil|Location2.Y=365.945mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=187.008mil|Location2.X=212.598mil|Location1.Y=351.378mil|Location2.Y=365.945mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C11-1(4.95mm,9.11mm) on Top Layer And Via (5.275mm,9.1mm) from Top Layer to Mid-Layer 1 </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=125.984mil|Location2.X=145.669mil|Location1.Y=353.307mil|Location2.Y=393.701mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=125.984mil|Location2.X=145.669mil|Location1.Y=353.307mil|Location2.Y=393.701mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C12-1(3.45mm,9.185mm) on Top Layer And Via (3.45mm,9.75mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=357.244mil|Location2.X=379.921mil|Location1.Y=74.803mil|Location2.Y=113.229mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=357.244mil|Location2.X=379.921mil|Location1.Y=74.803mil|Location2.Y=113.229mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C13-1(9.3mm,2.665mm) on Top Layer And Via (9.4mm,2.15mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=123.976mil|Location2.X=149.645mil|Location1.Y=6.89mil|Location2.Y=55.157mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=123.976mil|Location2.X=149.645mil|Location1.Y=6.89mil|Location2.Y=55.157mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C14-1(3.475mm,1.025mm) on Top Layer And Via (3.5mm,0.425mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=489.173mil|Location2.X=543.307mil|Location1.Y=178.347mil|Location2.Y=199.803mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=489.173mil|Location2.X=543.307mil|Location1.Y=178.347mil|Location2.Y=199.803mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C19-1(12.625mm,4.715mm) on Top Layer And Via (13.55mm,4.825mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=175.158mil|Location2.X=229.37mil|Location1.Y=5.866mil|Location2.Y=33.504mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=175.158mil|Location2.X=229.37mil|Location1.Y=5.866mil|Location2.Y=33.504mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (4.775mm,0.475mm) from Top Layer to Bottom Layer And Pad C2-1(5.45mm,0.525mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=321.811mil|Location2.X=348.464mil|Location1.Y=63.936mil|Location2.Y=118.15mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=321.811mil|Location2.X=348.464mil|Location1.Y=63.936mil|Location2.Y=118.15mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (8.5mm,2.675mm) from Top Layer to Bottom Layer And Pad C3-1(8.525mm,2mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=322.795mil|Location2.X=379.921mil|Location1.Y=63.936mil|Location2.Y=94.488mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=322.795mil|Location2.X=379.921mil|Location1.Y=63.936mil|Location2.Y=94.488mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C3-1(8.525mm,2mm) on Top Layer And Via (9.4mm,2.15mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=403.504mil|Location2.X=466.575mil|Location1.Y=154.488mil|Location2.Y=180.157mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=403.504mil|Location2.X=466.575mil|Location1.Y=154.488mil|Location2.Y=180.157mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C4-1(10.46mm,4.15mm) on Top Layer And Via (11.525mm,4.25mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=421.22mil|Location2.X=464.567mil|Location1.Y=222.402mil|Location2.Y=244.095mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=421.22mil|Location2.X=464.567mil|Location1.Y=222.402mil|Location2.Y=244.095mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C8-1(10.91mm,5.875mm) on Top Layer And Via (11.55mm,5.95mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=357.245mil|Location2.X=397.244mil|Location1.Y=350.354mil|Location2.Y=376.969mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=357.245mil|Location2.X=397.244mil|Location1.Y=350.354mil|Location2.Y=376.969mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C9-1(9.3mm,9.11mm) on Top Layer And Via (9.84mm,9.325mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=150.689mil|Location2.X=396.26mil|Location1.Y=71.555mil|Location2.Y=267.323mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=150.689mil|Location2.X=396.26mil|Location1.Y=71.555mil|Location2.Y=267.323mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Track (6.368mm,3.468mm)(6.368mm,4.357mm) on Top Layer And Pad U1-A5(7.525mm,4.25mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=99.803mil|Location2.X=313.583mil|Location1.Y=108.661mil|Location2.Y=281.102mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=99.803mil|Location2.X=313.583mil|Location1.Y=108.661mil|Location2.Y=281.102mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad U1-D12(5.075mm,5.3mm) on Top Layer And Track (5.425mm,4.6mm)(5.668mm,4.357mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=277.166mil|Location2.X=288.78mil|Location1.Y=244.685mil|Location2.Y=295.866mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=277.166mil|Location2.X=288.78mil|Location1.Y=244.685mil|Location2.Y=295.866mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad U1-G6(7.175mm,6.35mm) on Top Layer And Via (7.21mm,7.39mm) from Top Layer to Mid-Layer 1 </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=86.024mil|Location2.X=310.826mil|Location1.Y=354.724mil|Location2.Y=562.598mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=86.024mil|Location2.X=310.826mil|Location1.Y=354.724mil|Location2.Y=562.598mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (4.725mm,11.55mm) from Top Layer to Bottom Layer And Track (5.355mm,8.284mm)(5.355mm,11.75mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=113.583mil|Location2.X=341.142mil|Location1.Y=81.102mil|Location2.Y=281.102mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=113.583mil|Location2.X=341.142mil|Location1.Y=81.102mil|Location2.Y=281.102mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Track (5.425mm,4.6mm)(5.668mm,4.357mm) on Top Layer And Track (6.125mm,4.6mm)(6.368mm,4.357mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=119.488mil|Location2.X=340.157mil|Location1.Y=13.189mil|Location2.Y=223.031mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=119.488mil|Location2.X=340.157mil|Location1.Y=13.189mil|Location2.Y=223.031mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Track (5.525mm,2.825mm)(5.575mm,2.875mm) on Top Layer And Via (6.1mm,3.125mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=168.701mil|Location2.X=385.433mil|Location1.Y=362.599mil|Location2.Y=531.102mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=168.701mil|Location2.X=385.433mil|Location1.Y=362.599mil|Location2.Y=531.102mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Track (6.825mm,8.893mm)(6.825mm,11.75mm) on Top Layer And Via (7.25mm,10.95mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=200.197mil|Location2.X=419.488mil|Location1.Y=32.874mil|Location2.Y=227.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=200.197mil|Location2.X=419.488mil|Location1.Y=32.874mil|Location2.Y=227.953mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (7.625mm,3.375mm) from Top Layer to Bottom Layer And Track (8.115mm,3.25mm)(8.15mm,3.215mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4.882mil|Location2.X=30.551mil|Location1.Y=7.874mil|Location2.Y=83.701mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4.882mil|Location2.X=30.551mil|Location1.Y=7.874mil|Location2.Y=83.701mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (0.45mm,0.45mm) from Top Layer to Bottom Layer And Via (0.45mm,1.8mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4.882mil|Location2.X=30.551mil|Location1.Y=58.032mil|Location2.Y=170.315mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4.882mil|Location2.X=30.551mil|Location1.Y=58.032mil|Location2.Y=170.315mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (0.45mm,1.8mm) from Top Layer to Bottom Layer And Via (0.45mm,4mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4.882mil|Location2.X=100.433mil|Location1.Y=58.032mil|Location2.Y=83.701mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4.882mil|Location2.X=100.433mil|Location1.Y=58.032mil|Location2.Y=83.701mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (0.45mm,1.8mm) from Top Layer to Bottom Layer And Via (2.225mm,1.8mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7.874mil|Location2.X=27.559mil|Location1.Y=335.63mil|Location2.Y=464.567mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7.874mil|Location2.X=27.559mil|Location1.Y=335.63mil|Location2.Y=464.567mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (0.45mm,8.775mm) from Top Layer to Bottom Layer And Via (0.45mm,11.55mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7.874mil|Location2.X=82.677mil|Location1.Y=444.882mil|Location2.Y=464.567mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7.874mil|Location2.X=82.677mil|Location1.Y=444.882mil|Location2.Y=464.567mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (0.45mm,11.55mm) from Top Layer to Bottom Layer And Via (1.85mm,11.55mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4.882mil|Location2.X=30.551mil|Location1.Y=144.646mil|Location2.Y=214.606mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4.882mil|Location2.X=30.551mil|Location1.Y=144.646mil|Location2.Y=214.606mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (0.45mm,4mm) from Top Layer to Bottom Layer And Via (0.45mm,5.125mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4.882mil|Location2.X=105.354mil|Location1.Y=144.646mil|Location2.Y=170.315mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4.882mil|Location2.X=105.354mil|Location1.Y=144.646mil|Location2.Y=170.315mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (0.45mm,4mm) from Top Layer to Bottom Layer And Via (2.35mm,4mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4.882mil|Location2.X=30.551mil|Location1.Y=188.937mil|Location2.Y=260.866mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4.882mil|Location2.X=30.551mil|Location1.Y=188.937mil|Location2.Y=260.866mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (0.45mm,5.125mm) from Top Layer to Bottom Layer And Via (0.45mm,6.3mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4.882mil|Location2.X=30.551mil|Location1.Y=235.197mil|Location2.Y=355.315mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4.882mil|Location2.X=30.551mil|Location1.Y=235.197mil|Location2.Y=355.315mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (0.45mm,6.3mm) from Top Layer to Bottom Layer And Via (0.45mm,8.775mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7.874mil|Location2.X=83.661mil|Location1.Y=335.63mil|Location2.Y=355.315mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7.874mil|Location2.X=83.661mil|Location1.Y=335.63mil|Location2.Y=355.315mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (0.45mm,8.775mm) from Top Layer to Bottom Layer And Via (1.875mm,8.775mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=62.992mil|Location2.X=134.843mil|Location1.Y=444.882mil|Location2.Y=464.567mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=62.992mil|Location2.X=134.843mil|Location1.Y=444.882mil|Location2.Y=464.567mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (1.85mm,11.55mm) from Top Layer to Bottom Layer And Via (3.175mm,11.55mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=388.779mil|Location2.X=458.701mil|Location1.Y=4.882mil|Location2.Y=71.709mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=388.779mil|Location2.X=458.701mil|Location1.Y=4.882mil|Location2.Y=71.709mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (10.125mm,1.571mm) from Top Layer to Bottom Layer And Via (11.325mm,0.45mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=360.236mil|Location2.X=408.464mil|Location1.Y=52.023mil|Location2.Y=94.488mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=360.236mil|Location2.X=408.464mil|Location1.Y=52.023mil|Location2.Y=94.488mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (9.4mm,2.15mm) from Top Layer to Bottom Layer And Via (10.125mm,1.571mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=423.189mil|Location2.X=464.567mil|Location1.Y=224.41mil|Location2.Y=280.551mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=423.189mil|Location2.X=464.567mil|Location1.Y=224.41mil|Location2.Y=280.551mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (11.075mm,6.8mm) from Top Layer to Bottom Layer And Via (11.55mm,5.95mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=433.032mil|Location2.X=543.307mil|Location1.Y=4.882mil|Location2.Y=30.551mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=433.032mil|Location2.X=543.307mil|Location1.Y=4.882mil|Location2.Y=30.551mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (11.325mm,0.45mm) from Top Layer to Bottom Layer And Via (13.55mm,0.45mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=346.417mil|Location2.X=458.701mil|Location1.Y=4.882mil|Location2.Y=30.551mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=346.417mil|Location2.X=458.701mil|Location1.Y=4.882mil|Location2.Y=30.551mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (9.125mm,0.45mm) from Top Layer to Bottom Layer And Via (11.325mm,0.45mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=440.906mil|Location2.X=509.228mil|Location1.Y=111.614mil|Location2.Y=180.157mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=440.906mil|Location2.X=509.228mil|Location1.Y=111.614mil|Location2.Y=180.157mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (11.525mm,4.25mm) from Top Layer to Bottom Layer And Via (12.684mm,3.085mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=461.614mil|Location2.X=543.307mil|Location1.Y=444.882mil|Location2.Y=464.567mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=461.614mil|Location2.X=543.307mil|Location1.Y=444.882mil|Location2.Y=464.567mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (11.975mm,11.55mm) from Top Layer to Bottom Layer And Via (13.55mm,11.55mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=377.559mil|Location2.X=481.299mil|Location1.Y=444.882mil|Location2.Y=464.567mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=377.559mil|Location2.X=481.299mil|Location1.Y=444.882mil|Location2.Y=464.567mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (9.84mm,11.55mm) from Top Layer to Bottom Layer And Via (11.975mm,11.55mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=461.614mil|Location2.X=543.307mil|Location1.Y=341.536mil|Location2.Y=363.189mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=461.614mil|Location2.X=543.307mil|Location1.Y=341.536mil|Location2.Y=363.189mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (11.975mm,8.925mm) from Top Layer to Bottom Layer And Via (13.55mm,8.975mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=377.559mil|Location2.X=481.299mil|Location1.Y=341.536mil|Location2.Y=376.969mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=377.559mil|Location2.X=481.299mil|Location1.Y=341.536mil|Location2.Y=376.969mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (9.84mm,9.325mm) from Top Layer to Bottom Layer And Via (11.975mm,8.925mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=489.543mil|Location2.X=543.307mil|Location1.Y=111.614mil|Location2.Y=135.827mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=489.543mil|Location2.X=543.307mil|Location1.Y=111.614mil|Location2.Y=135.827mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (12.684mm,3.085mm) from Top Layer to Bottom Layer And Via (13.55mm,3.2mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=523.622mil|Location2.X=543.307mil|Location1.Y=7.874mil|Location2.Y=81.693mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=523.622mil|Location2.X=543.307mil|Location1.Y=7.874mil|Location2.Y=81.693mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (13.55mm,0.45mm) from Top Layer to Bottom Layer And Via (13.55mm,1.825mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=523.622mil|Location2.X=543.307mil|Location1.Y=62.008mil|Location2.Y=135.827mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=523.622mil|Location2.X=543.307mil|Location1.Y=62.008mil|Location2.Y=135.827mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (13.55mm,1.825mm) from Top Layer to Bottom Layer And Via (13.55mm,3.2mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=523.622mil|Location2.X=543.307mil|Location1.Y=343.504mil|Location2.Y=464.567mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=523.622mil|Location2.X=543.307mil|Location1.Y=343.504mil|Location2.Y=464.567mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (13.55mm,8.975mm) from Top Layer to Bottom Layer And Via (13.55mm,11.55mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=523.622mil|Location2.X=543.307mil|Location1.Y=116.142mil|Location2.Y=199.803mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=523.622mil|Location2.X=543.307mil|Location1.Y=116.142mil|Location2.Y=199.803mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (13.55mm,3.2mm) from Top Layer to Bottom Layer And Via (13.55mm,4.825mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=520.63mil|Location2.X=546.299mil|Location1.Y=180.118mil|Location2.Y=239.213mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=520.63mil|Location2.X=546.299mil|Location1.Y=180.118mil|Location2.Y=239.213mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (13.55mm,4.825mm) from Top Layer to Bottom Layer And Via (13.55mm,5.75mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=520.63mil|Location2.X=546.299mil|Location1.Y=213.543mil|Location2.Y=300.197mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=520.63mil|Location2.X=546.299mil|Location1.Y=213.543mil|Location2.Y=300.197mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (13.55mm,5.75mm) from Top Layer to Bottom Layer And Via (13.55mm,7.375mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=523.622mil|Location2.X=543.307mil|Location1.Y=280.512mil|Location2.Y=363.189mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=523.622mil|Location2.X=543.307mil|Location1.Y=280.512mil|Location2.Y=363.189mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (13.55mm,7.375mm) from Top Layer to Bottom Layer And Via (13.55mm,8.975mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=74.764mil|Location2.X=122.087mil|Location1.Y=27.52mil|Location2.Y=83.701mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=74.764mil|Location2.X=122.087mil|Location1.Y=27.52mil|Location2.Y=83.701mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (2.225mm,1.8mm) from Top Layer to Bottom Layer And Via (2.775mm,1.025mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=96.417mil|Location2.X=147.638mil|Location1.Y=6.89mil|Location2.Y=53.189mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=96.417mil|Location2.X=147.638mil|Location1.Y=6.89mil|Location2.Y=53.189mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (2.775mm,1.025mm) from Top Layer to Bottom Layer And Via (3.5mm,0.425mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=115.157mil|Location2.X=195.866mil|Location1.Y=444.882mil|Location2.Y=464.567mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=115.157mil|Location2.X=195.866mil|Location1.Y=444.882mil|Location2.Y=464.567mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (3.175mm,11.55mm) from Top Layer to Bottom Layer And Via (4.725mm,11.55mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=112.165mil|Location2.X=172.244mil|Location1.Y=191.929mil|Location2.Y=248.071mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=112.165mil|Location2.X=172.244mil|Location1.Y=191.929mil|Location2.Y=248.071mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (3.175mm,5.975mm) from Top Layer to Bottom Layer And Via (4.125mm,5.125mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=125.984mil|Location2.X=204.724mil|Location1.Y=371.063mil|Location2.Y=393.701mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=125.984mil|Location2.X=204.724mil|Location1.Y=371.063mil|Location2.Y=393.701mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (3.45mm,9.75mm) from Top Layer to Bottom Layer And Via (4.95mm,9.675mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=127.953mil|Location2.X=200.827mil|Location1.Y=5.866mil|Location2.Y=31.535mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=127.953mil|Location2.X=200.827mil|Location1.Y=5.866mil|Location2.Y=31.535mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (3.5mm,0.425mm) from Top Layer to Bottom Layer And Via (4.775mm,0.475mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=185.039mil|Location2.X=212.598mil|Location1.Y=353.347mil|Location2.Y=390.748mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=185.039mil|Location2.X=212.598mil|Location1.Y=353.347mil|Location2.Y=390.748mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (4.95mm,9.675mm) from Top Layer to Bottom Layer And Via (5.275mm,9.1mm) from Top Layer to Mid-Layer 1 </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=202.756mil|Location2.X=286.417mil|Location1.Y=336.614mil|Location2.Y=363.189mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=202.756mil|Location2.X=286.417mil|Location1.Y=336.614mil|Location2.Y=363.189mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (5.275mm,9.1mm) from Top Layer to Mid-Layer 1 And Via (7.15mm,8.675mm) from Top Layer to Mid-Layer 1 </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

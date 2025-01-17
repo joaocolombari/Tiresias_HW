@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AMM-3742-T-WP-R
+D Microphones MICROPHONE -42 DB 2 VDC 200 UA 300 OHM,20 Hz ~ 20 kHz Analog Microphone MEMS (Silicon) 1.5 V ~ 3.6 V Omnidirectional (-42dB +/-1dB) Solder Pads
+K
+F https://www.puiaudio.com/media/SpecSheet/AMM-3742-T-WP-R.pdf
+$ENDCMP
+#
+#End Doc Library

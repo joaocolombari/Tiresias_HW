@@ -1,0 +1,16 @@
+.XCL232D091KR-G :1 ;Ultra-Low Quiescent Current, Inductor Built-in Step-Down DC/DC Converter, CL-2025-03
+XCL232B051KRG
+*STM IC
+*NGS
+*PLB 1="LX" 2="GND" 3="VOUT" 4="CE" 5="NC" 6="VIN" 7="L1" 8="L2" 9="EP"
+*MXP 9
+*DFN XCL232D091KR-G
+~!Mouser Part Number (865-XCL232D091KR-G)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Torex-Semiconductor/XCL232D091KR-G?qs=Znm5pLBrcAIAF3XJtDZJsg%3D%3D)
+~!Manufacturer_Name (Torex)
+~!Manufacturer_Part_Number (XCL232D091KR-G)
+~!Link Datasheet (https://www.torexsemi.com/file/xcl232/xcl232.pdf)
+~!Height (1.04mm)
+~!3D_Model (XCL232D091KR-G)
+XCL232D091KR-G
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 9.1!U 

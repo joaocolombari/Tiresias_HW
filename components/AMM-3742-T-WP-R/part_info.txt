@@ -1,0 +1,9 @@
+Manufacturer=PUI Audio
+PartNumber=AMM-3742-T-WP-R
+PartCategory=Microphone
+PackageCategory=Other
+PinCount=4
+Version=1.4
+Released=2021-10-19 05:36:40
+Downloaded=2025-01-10 13:39:49
+3D=Y

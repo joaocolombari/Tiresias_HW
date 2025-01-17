@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "AMM-3742-T-WP-R"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2021-10-19-05:36:40)
+    (mountForm default
+        (footprintRef "AMM3742TWPR")
+        (spec "System")
+    )
+)

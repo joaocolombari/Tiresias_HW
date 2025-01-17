@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "AMM3742TWPR"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "AMM3742TWPR")
+        (spec "default")
+    )
+)

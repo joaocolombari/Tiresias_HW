@@ -1,0 +1,13 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [Tiresias.PrjPcb]
+   Generated File[Tiresias_PCB.TXT]
+   Generated File[Tiresias_PCB.TX1]
+   Generated File[Tiresias_PCB.LDP]
+   Generated File[Tiresias_PCB.DRR]
+
+
+Files Generated   : 4
+Documents Printed : 0
+
+Finished Output Generation At 13:06:15 On 20/09/2024

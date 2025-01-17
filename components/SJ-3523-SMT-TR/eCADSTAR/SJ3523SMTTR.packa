@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "SJ-3523-SMT-TR"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2020-09-13-15:56:13)
+    (mountForm default
+        (footprintRef "SJ3523SMTTR")
+        (spec "System")
+    )
+)

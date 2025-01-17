@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "SJ3523SMTTR"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "SJ3523SMTTR")
+        (spec "default")
+    )
+)
