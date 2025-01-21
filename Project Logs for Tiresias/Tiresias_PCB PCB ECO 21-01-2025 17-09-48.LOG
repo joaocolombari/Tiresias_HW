@@ -1,0 +1,272 @@
+Removed Pin From Net: NetName=P1.13 Pin=IC1-A1
+Removed Pin From Net: NetName=P1.14 Pin=IC1-A2
+Removed Pin From Net: NetName=P1.12 Pin=IC1-B1
+Removed Pin From Net: NetName=P1.15 Pin=IC1-B2
+Removed Pin From Net: NetName=P0.05/AIN1 Pin=IC1-C3
+Removed Pin From Net: NetName=P0.04/AIN0 Pin=IC1-C4
+Removed Pin From Net: NetName=P0.06/AIN2 Pin=IC1-C5
+Removed Pin From Net: NetName=P0.07/AIN3 Pin=IC1-D5
+Removed Pin From Net: NetName=P1.15 Pin=TP13-1
+Removed Pin From Net: NetName=P1.14 Pin=TP14-1
+Removed Pin From Net: NetName=P1.13 Pin=TP15-1
+Removed Pin From Net: NetName=P1.12 Pin=TP16-1
+Removed Pin From Net: NetName=P0.07/AIN3 Pin=TP17-1
+Removed Pin From Net: NetName=P0.06/AIN2 Pin=TP18-1
+Removed Pin From Net: NetName=P0.04/AIN0 Pin=TP19-1
+Removed Pin From Net: NetName=P0.05/AIN1 Pin=TP20-1
+Added Component: Designator=R18(RESC0603X03L_C)
+Add component (AddParameter): Name = "Artikkelnr Noca"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Assembly"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Author"; Value = "rsk"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Class"; Value = "Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Supplier link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Footprint Doc"; Value = "0201"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "2014-11-13"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Note"; Value = "Chip Res 1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pad Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "R0201-220"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number IPS"; Value = "00000000863"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number Norautron"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartId"; Value = "100100032"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "2014-11-13"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 2"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 2"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "33R"; VariantName = "[No Variations]"
+Added Component: Designator=R19(RESC0603X03L_C)
+Add component (AddParameter): Name = "Artikkelnr Noca"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Assembly"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Author"; Value = "rsk"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Class"; Value = "Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Supplier link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Footprint Doc"; Value = "0201"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "2014-11-13"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Note"; Value = "Chip Res 1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pad Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "R0201-220"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number IPS"; Value = "00000000863"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number Norautron"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartId"; Value = "100100032"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "2014-11-13"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 2"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 2"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "33R"; VariantName = "[No Variations]"
+Added Component: Designator=R20(RESC0603X03L_C)
+Add component (AddParameter): Name = "Artikkelnr Noca"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Assembly"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Author"; Value = "rsk"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Class"; Value = "Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Supplier link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Footprint Doc"; Value = "0201"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "2014-11-13"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Note"; Value = "Chip Res 1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pad Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "R0201-220"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number IPS"; Value = "00000000863"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number Norautron"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartId"; Value = "100100032"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "2014-11-13"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 2"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 2"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "33R"; VariantName = "[No Variations]"
+Added Component: Designator=R21(RESC0603X03L_C)
+Add component (AddParameter): Name = "Artikkelnr Noca"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Assembly"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Author"; Value = "rsk"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Class"; Value = "Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Supplier link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Footprint Doc"; Value = "0201"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "2014-11-13"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Note"; Value = "Chip Res 1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pad Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "R0201-220"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number IPS"; Value = "00000000863"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number Norautron"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartId"; Value = "100100032"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "2014-11-13"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 2"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 2"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "33R"; VariantName = "[No Variations]"
+Added Component: Designator=R22(RESC0603X03L_C)
+Add component (AddParameter): Name = "Artikkelnr Noca"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Assembly"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Author"; Value = "rsk"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Class"; Value = "Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Supplier link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Footprint Doc"; Value = "0201"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "2014-11-13"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Note"; Value = "Chip Res 1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pad Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "R0201-220"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number IPS"; Value = "00000000863"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number Norautron"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartId"; Value = "100100032"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "2014-11-13"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 2"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 2"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "33R"; VariantName = "[No Variations]"
+Added Component: Designator=R23(RESC0603X03L_C)
+Add component (AddParameter): Name = "Artikkelnr Noca"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Assembly"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Author"; Value = "rsk"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Class"; Value = "Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Supplier link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Footprint Doc"; Value = "0201"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "2014-11-13"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Note"; Value = "Chip Res 1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pad Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "R0201-220"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number IPS"; Value = "00000000863"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number Norautron"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartId"; Value = "100100032"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "2014-11-13"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 2"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 2"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "33R"; VariantName = "[No Variations]"
+Added Component: Designator=R24(RESC0603X03L_C)
+Add component (AddParameter): Name = "Artikkelnr Noca"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Assembly"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Author"; Value = "rsk"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Class"; Value = "Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Supplier link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Footprint Doc"; Value = "0201"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "2014-11-13"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Note"; Value = "Chip Res 1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pad Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "R0201-220"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number IPS"; Value = "00000000863"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number Norautron"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartId"; Value = "100100032"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "2014-11-13"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 2"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 2"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "33R"; VariantName = "[No Variations]"
+Added Component: Designator=R25(RESC0603X03L_C)
+Add component (AddParameter): Name = "Artikkelnr Noca"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Assembly"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Author"; Value = "rsk"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Class"; Value = "Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Supplier link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Footprint Doc"; Value = "0201"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "2014-11-13"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Note"; Value = "Chip Res 1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pad Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "R0201-220"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number IPS"; Value = "00000000863"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number Norautron"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartId"; Value = "100100032"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "2014-11-13"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 2"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 2"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "33R"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=P1.15 Pin=R18-2
+Added Pin To Net: NetName=P1.14 Pin=R19-2
+Added Pin To Net: NetName=P1.13 Pin=R20-2
+Added Pin To Net: NetName=P1.12 Pin=R21-2
+Added Pin To Net: NetName=P0.07/AIN3 Pin=R22-2
+Added Pin To Net: NetName=P0.06/AIN2 Pin=R23-2
+Added Pin To Net: NetName=P0.04/AIN0 Pin=R24-2
+Added Pin To Net: NetName=P0.05/AIN1 Pin=R25-2
+Added Pin To Net: NetName=NetIC1_A1 Pin=IC1-A1
+Added Pin To Net: NetName=NetIC1_A1 Pin=R20-1
+Added Pin To Net: NetName=NetIC1_A1 Pin=TP15-1
+Added Net: Name=NetIC1_A1
+Added Pin To Net: NetName=NetIC1_A2 Pin=IC1-A2
+Added Pin To Net: NetName=NetIC1_A2 Pin=R19-1
+Added Pin To Net: NetName=NetIC1_A2 Pin=TP14-1
+Added Net: Name=NetIC1_A2
+Added Pin To Net: NetName=NetIC1_B1 Pin=IC1-B1
+Added Pin To Net: NetName=NetIC1_B1 Pin=R21-1
+Added Pin To Net: NetName=NetIC1_B1 Pin=TP16-1
+Added Net: Name=NetIC1_B1
+Added Pin To Net: NetName=NetIC1_B2 Pin=IC1-B2
+Added Pin To Net: NetName=NetIC1_B2 Pin=R18-1
+Added Pin To Net: NetName=NetIC1_B2 Pin=TP13-1
+Added Net: Name=NetIC1_B2
+Added Pin To Net: NetName=NetIC1_C3 Pin=IC1-C3
+Added Pin To Net: NetName=NetIC1_C3 Pin=R25-1
+Added Pin To Net: NetName=NetIC1_C3 Pin=TP20-1
+Added Net: Name=NetIC1_C3
+Added Pin To Net: NetName=NetIC1_C4 Pin=IC1-C4
+Added Pin To Net: NetName=NetIC1_C4 Pin=R24-1
+Added Pin To Net: NetName=NetIC1_C4 Pin=TP19-1
+Added Net: Name=NetIC1_C4
+Added Pin To Net: NetName=NetIC1_C5 Pin=IC1-C5
+Added Pin To Net: NetName=NetIC1_C5 Pin=R23-1
+Added Pin To Net: NetName=NetIC1_C5 Pin=TP18-1
+Added Net: Name=NetIC1_C5
+Added Pin To Net: NetName=NetIC1_D5 Pin=IC1-D5
+Added Pin To Net: NetName=NetIC1_D5 Pin=R22-1
+Added Pin To Net: NetName=NetIC1_D5 Pin=TP17-1
+Added Net: Name=NetIC1_D5
+Added Member To Class: ClassName=U_Tiresias_audio_codec Member=Component R18 33R
+Added Member To Class: ClassName=U_Tiresias_audio_codec Member=Component R19 33R
+Added Member To Class: ClassName=U_Tiresias_audio_codec Member=Component R20 33R
+Added Member To Class: ClassName=U_Tiresias_audio_codec Member=Component R21 33R
+Added Member To Class: ClassName=U_Tiresias_audio_codec Member=Component R22 33R
+Added Member To Class: ClassName=U_Tiresias_audio_codec Member=Component R23 33R
+Added Member To Class: ClassName=U_Tiresias_audio_codec Member=Component R24 33R
+Added Member To Class: ClassName=U_Tiresias_audio_codec Member=Component R25 33R

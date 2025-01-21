@@ -1,0 +1,20 @@
+Added Component: Designator=IC2(CL-2025)
+Add component (AddParameter): Name = "DeviceName"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DeviceSetName"; Value = "XCL232D091KR-G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "GateName_1"; Value = "G$1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1.04mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LibraryName"; Value = "XCL232D091KR-G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Torex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "XCL232D091KR-G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser_Part_Number"; Value = "865-XCL232D091KR-G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser_Price-Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Torex-Semiconductor/XCL232D091KR-G?qs=Znm5pLBrcAIAF3XJtDZJsg%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "XCL232B051KRG"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SymbolName_1"; Value = "XCL232D091KR-G"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetIC2_1 Pin=IC2-1
+Added Pin To Net: NetName=GND Pin=IC2-2
+Added Pin To Net: NetName=DVDD_EXT Pin=IC2-3
+Added Pin To Net: NetName=NetIC2_4 Pin=IC2-4
+Added Pin To Net: NetName=VSYS Pin=IC2-6
+Added Pin To Net: NetName=NetIC2_1 Pin=IC2-7
+Added Pin To Net: NetName=DVDD_EXT Pin=IC2-8
+Added Member To Class: ClassName=U_Tiresias_PMIC Member=Component IC2 0.9V Ultra-Low Quiescent Current, Inductor Built-in Step-Down DC/DC Converter, CL-2025-03   Source:  Datasheet

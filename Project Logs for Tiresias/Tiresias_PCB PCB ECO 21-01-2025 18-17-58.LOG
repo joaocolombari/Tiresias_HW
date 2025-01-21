@@ -1,0 +1,14 @@
+Change Component Footprint: Designator=C20 Old Footprint=CAPC1005X04L New Footprint=CAPC1608X06L
+Change Component Comment : Designator=C20 Old Comment=1uF New Comment=10uF
+Change component parameters: Designator = "C20" ("C20"); Footprint = "CAPC1005X04L"; UniqueID = "\FIYVYMDV\WTHMTAIR" ("\FIYVYMDV\WTHMTAIR")
+Change component parameters (AddParameter): Name = "Class"; Value = "SMT"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DigiKey link"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "JLCpcb link"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "2024/02/20"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser link"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "C0603-10µ"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10uF"; VariantName = "[No Variations]"

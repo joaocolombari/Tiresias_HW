@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=VDD Pin=C42-1
+Removed Pin From Net: NetName=GND Pin=C42-2
+Removed Member From Class: ClassName=U_Tiresias_audio_codec Member=C42
