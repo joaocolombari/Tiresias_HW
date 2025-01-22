@@ -1,0 +1,33 @@
+Removed Pin From Net: NetName=VBAT Pin=C51-2
+Removed Pin From Net: NetName=VBAT Pin=FB1-2
+Added Component: Designator=J2(SM02B-SRSS-TB(LF)(SN))
+Add component (AddParameter): Name = "Artikkelnr Noca"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Assembly"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Author"; Value = "rsk"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Class"; Value = "Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Supplier link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Footprint Doc"; Value = "SM03B-SRSS-TB"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "http://www.jst-mfg.com/product/pdf/eng/eSH.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "2017-10-09"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "JST Sales America Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "SM03B-SRSS-TB(LF)(SN)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Note"; Value = "JST, Header"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pad Count"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "SM03B-SRSS-TB"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number IPS"; Value = "00000001785"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number Norautron"; Value = "N.A."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartId"; Value = "100500605"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "2017-10-09"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Cabcon"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 2"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "SM03B-SRSS-TB(LF)(SN)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 2"; Value = "455-1803-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "SM02B-SRSS-TB"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VBUS Pin=C51-2
+Added Pin To Net: NetName=VBUS Pin=FB1-2
+Added Pin To Net: NetName=GND Pin=J2-1
+Added Pin To Net: NetName=VBAT Pin=J2-2
+Added Member To Class: ClassName=U_Tiresias_misc Member=Component J2 SM02B-SRSS-TB

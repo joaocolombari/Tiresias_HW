@@ -1,0 +1,4 @@
+Added Component: Designator=J5(SAMTEC_TSW-101-24-S-D)
+Add Pin To Net: Unknown Pin: Pin J5-1
+Add Pin To Net: Unknown Pin: Pin J5-2
+Added Member To Class: ClassName=U_Tiresias_misc Member=Component J5 SAMTEC-TSW-101-24-S-D
