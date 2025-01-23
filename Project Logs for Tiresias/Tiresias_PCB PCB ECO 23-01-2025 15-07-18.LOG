@@ -1,0 +1,37 @@
+Removed Pin From Net: NetName=GND Pin=U5-9
+Change Component Footprint: Designator=P1 Old Footprint=HDR_2x5-SMD-1.27mm-K New Footprint=HDR_2x5-SMD-1.27mm-ANG
+Change Component Comment : Designator=P1 Old Comment=Pin Header 2x5, 1.27mm New Comment=Pin Header 2x5, 1.27mm Angular
+Change Component Designator: OldDesignator=m NewDesignator=TP1
+Change component parameters: Designator = "P1" ("P1"); Footprint = "HDR_2x5-SMD-1.27mm-K"; UniqueID = "\LYKLZKJX\GXWYOCJC" ("\LYKLZKJX\GXWYOCJC")
+Change component parameters (AddParameter): Name = "Artikkelnr Noca"; Value = "55010009"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Assembly"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Component Class"; Value = "Connectors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "N.A."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Supplier link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "N.A."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Footprint Doc"; Value = "HDR_2x5-SMD-1.27mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "HelpURL"; Value = "\\hizz\pro\app9717\Datasheet\connectors\W-CON\3132-XXMXXBK00XX.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LatestRevisionDate"; Value = "2016-04-21"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "W-CON"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "3132-10MS0BK00R1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Note"; Value = "N.A."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pad Count"; Value = "10"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "Pin Header 2x5 SMD, 1.27mm, KS"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part number IPS"; Value = "00000009968"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PartId"; Value = "100500261"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pin Count"; Value = "10"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Published"; Value = "2016-01-22"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Nordic Semiconductor"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Cabcon"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 2"; Value = "Samtec"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "3132-10MS0BK00R1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 2"; Value = "FTSH-105-01-F-DV-K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "Pin Header 2x5, 1.27mm Angular"; VariantName = "[No Variations]"
+Added Member To Class: ClassName=U_Tiresias_PMIC Member=Component Q1 DMC2990UDJ
+Added Member To Class: ClassName=U_Tiresias_PMIC Member=Component R1 1M0
+Added Member To Class: ClassName=U_Tiresias_PMIC Member=Component R2 1M5
+Added Member To Class: ClassName=U_Tiresias_PMIC Member=Component R4 220k
+Added Member To Class: ClassName=U_Tiresias_PMIC Member=Component R5 1M0
+Added Member To Class: ClassName=U_Tiresias_PMIC Member=Component TP11 Ø1.0mm,SMD
+Added Member To Class: ClassName=U_Tiresias_PMIC Member=Component TP12 Ø1.0mm,SMD
