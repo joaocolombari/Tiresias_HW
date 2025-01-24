@@ -1,0 +1,17 @@
+Removed Pin From Net: NetName=NetIC1_B2 Pin=TP13-1
+Removed Pin From Net: NetName=NetIC1_A2 Pin=TP14-1
+Removed Pin From Net: NetName=NetIC1_A1 Pin=TP15-1
+Removed Pin From Net: NetName=NetIC1_B1 Pin=TP16-1
+Removed Pin From Net: NetName=NetIC1_D5 Pin=TP17-1
+Removed Pin From Net: NetName=NetIC1_C5 Pin=TP18-1
+Removed Pin From Net: NetName=NetIC1_C4 Pin=TP19-1
+Removed Pin From Net: NetName=NetIC1_C3 Pin=TP20-1
+Added Pin To Net: NetName=P1.15 Pin=TP13-1
+Added Pin To Net: NetName=P1.14 Pin=TP14-1
+Added Pin To Net: NetName=P1.13 Pin=TP15-1
+Added Pin To Net: NetName=P1.12 Pin=TP16-1
+Added Pin To Net: NetName=P0.07/AIN3 Pin=TP17-1
+Added Pin To Net: NetName=P0.06/AIN2 Pin=TP18-1
+Added Pin To Net: NetName=P0.04/AIN0 Pin=TP19-1
+Added Pin To Net: NetName=P0.05/AIN1 Pin=TP20-1
+Added Member To Class: ClassName=U_Tiresias_MCU Member=Component U1 *
