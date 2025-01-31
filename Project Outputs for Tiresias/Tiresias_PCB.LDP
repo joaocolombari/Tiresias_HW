@@ -1,3 +1,7 @@
 Layer Pairs Export File for PCB: C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc
-LayersSetName=Top_Bot_Thru_Holes|DrillFile=tiresias_pcb.txt|DrillLayers=gtl,gp1,gp2,gp3,g1,g2,g3,g4,gbl
-LayersSetName=Top_Mid_1_Blind_Vias|DrillFile=tiresias_pcb.tx1|DrillLayers=gtl,gp1,gp2,gp3,g1
+LayersSetName=Top_Bot_Thru_Holes|DrillFile=tiresias_pcb.txt|DrillLayers=gtl,g1,g2,g3,g4,gbl
+LayersSetName=Top_Int1 (GND)_Blind_Vias|DrillFile=tiresias_pcb.tx1|DrillLayers=gtl,g1
+LayersSetName=Int1 (GND)_Int2 (PWR)_Buried_Vias|DrillFile=tiresias_pcb.tx2|DrillLayers=g1,g2
+LayersSetName=Int2 (PWR)_Int3 (SIG)_Buried_Vias|DrillFile=tiresias_pcb.tx3|DrillLayers=g2,g3
+LayersSetName=Int3 (SIG)_Int4 (GND)_Buried_Vias|DrillFile=tiresias_pcb.tx4|DrillLayers=g3,g4
+LayersSetName=Int4 (GND)_Bot_Blind_Vias|DrillFile=tiresias_pcb.tx5|DrillLayers=g4,gbl

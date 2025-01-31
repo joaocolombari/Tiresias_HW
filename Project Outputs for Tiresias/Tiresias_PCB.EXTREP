@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------------------
-Gerber File Extension Report For: Tiresias_PCB.GBR   20/09/2024  13:06:04
+Gerber File Extension Report For: Tiresias_PCB.GBR   31/01/2025  16:31:44
 ------------------------------------------------------------------------------------------
 
 
@@ -10,10 +10,10 @@ Layer Extension     Layer Description
 .GTP                Top Paste                               
 .GTS                Top Solder                              
 .GTL                Top Layer                               
-.G1                 Mid-Layer 1                             
-.G2                 Mid-Layer 2                             
-.G3                 Mid-Layer 3                             
-.G4                 Mid-Layer 4                             
+.G1                 Int1 (GND)                              
+.G2                 Int2 (PWR)                              
+.G3                 Int3 (SIG)                              
+.G4                 Int4 (GND)                              
 .GBL                Bottom Layer                            
 .GBS                Bottom Solder                           
 .GBP                Bottom Paste                            

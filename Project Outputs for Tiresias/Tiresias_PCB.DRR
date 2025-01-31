@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------------------------
-NCDrill File Report For: Tiresias_PCB.PcbDoc   20/09/2024  13:06:15
+NCDrill File Report For: Tiresias_PCB.PcbDoc   31/01/2025  16:32:50
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Layer Pair : Top Layer to Bottom Layer
@@ -7,21 +7,57 @@ ASCII RoundHoles File : Tiresias_PCB.TXT
 
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
-T2      0.15mm (6mil)                                             Round             7         PTH        6.45mm (0.25inch)
-T3      0.25mm (10mil)                                            Round             60        PTH        123.31mm (4.85inch)
-T4      0.9mm (35mil)                                             Round             5         PTH        8.67mm (0.34inch)
+T1      0.1mm (4mil)                                              Round             227       PTH        360.74mm (14.20inch)
+T2      0.25mm (10mil)                                            Round             22        PTH        107.18mm (4.22inch)
+T3      3mm (118mil)                                              Round             2         PTH        31.00mm (1.22inch)
+T4      1.02mm (40mil)                                            Round             2         NPTH       3.81mm (0.15inch)
 ----------------------------------------------------------------------------------------------------------------------------------
-Totals                                                                              72
-Layer Pair : Top Layer to Mid-Layer 1
+Totals                                                                              253
+Layer Pair : Top Layer to Int1 (GND)
 ASCII RoundHoles File : Tiresias_PCB.TX1
 
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
-T1      0.1mm (4mil)                                              Round             30        PTH        21.70mm (0.85inch)
-T2      0.15mm (6mil)                                             Round             29        PTH        36.32mm (1.43inch)
+T1      0.1mm (4mil)                                              Round             235       PTH        352.26mm (13.87inch)
 ----------------------------------------------------------------------------------------------------------------------------------
-Totals                                                                              59
+Totals                                                                              235
+Layer Pair : Int1 (GND) to Int2 (PWR)
+ASCII RoundHoles File : Tiresias_PCB.TX2
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
-Totals                                                                              131
+T1      0.1mm (4mil)                                              Round             130       PTH        285.15mm (11.23inch)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              130
+Layer Pair : Int2 (PWR) to Int3 (SIG)
+ASCII RoundHoles File : Tiresias_PCB.TX3
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      0.1mm (4mil)                                              Round             110       PTH        255.66mm (10.07inch)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              110
+Layer Pair : Int3 (SIG) to Int4 (GND)
+ASCII RoundHoles File : Tiresias_PCB.TX4
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      0.1mm (4mil)                                              Round             51        PTH        160.25mm (6.31inch)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              51
+Layer Pair : Int4 (GND) to Bottom Layer
+ASCII RoundHoles File : Tiresias_PCB.TX5
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      0.1mm (4mil)                                              Round             48        PTH        156.50mm (6.16inch)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              48
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              827
+
+Two holes at same point : 1
+-----------------------
+1269,642
 
 Total Processing Time (hh:mm:ss) : 00:00:00
