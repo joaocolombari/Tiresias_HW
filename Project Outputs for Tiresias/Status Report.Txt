@@ -1,17 +1,10 @@
-Output: NC Drill Files
-Type  : NC Drill
-From  : Project [Tiresias.PrjPcb]
-   Generated File[Tiresias_PCB.TXT]
-   Generated File[Tiresias_PCB.TX1]
-   Generated File[Tiresias_PCB.TX2]
-   Generated File[Tiresias_PCB.TX3]
-   Generated File[Tiresias_PCB.TX4]
-   Generated File[Tiresias_PCB.TX5]
-   Generated File[Tiresias_PCB.LDP]
-   Generated File[Tiresias_PCB.DRR]
+Output: Generates pick and place files
+Type  : Pick Place
+From  : Variant [[No Variations]] of Project [Tiresias.PrjPcb]
+   Generated File[Pick Place for Tiresias_PCB.txt]
 
 
-Files Generated   : 8
+Files Generated   : 1
 Documents Printed : 0
 
-Finished Output Generation At 16:32:50 On 31/01/2025
+Finished Output Generation At 14:09:36 On 07/02/2025

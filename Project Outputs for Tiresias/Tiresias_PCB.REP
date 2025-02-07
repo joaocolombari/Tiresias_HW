@@ -2,6 +2,95 @@
 FileName = Tiresias_PCB.GBR
 AutoAperture = True
 *************************************************************
+Generating : Mechanical 20
+      File : Tiresias_PCB.GM20
+
+    Adding Layer      : Mechanical 20
+
+
+Used DCodes :
+    D15
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 15
+      File : Tiresias_PCB.GM15
+
+    Adding Layer      : Mechanical 15
+
+
+Used DCodes :
+    D14
+    D15
+    D121
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 13
+      File : Tiresias_PCB.GM13
+
+    Adding Layer      : Mechanical 13
+
+
+Used DCodes :
+    D10
+    D16
+    D113
+    D119
+    D120
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 7
+      File : Tiresias_PCB.GM7
+
+    Adding Layer      : Mechanical 7
+
+
+Used DCodes :
+    D11
+    D12
+    D15
+    D115
+    D116
+    D117
+    D118
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 3
+      File : Tiresias_PCB.GM3
+
+    Adding Layer      : Mechanical 3
+
+
+Used DCodes :
+    D112
+    D114
+*************************************************************
+
+*************************************************************
+Generating : Dimensions
+      File : Tiresias_PCB.GM2
+
+    Adding Layer      : Dimensions
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 1
+      File : Tiresias_PCB.GM1
+
+    Adding Layer      : Mechanical 1
+
+
+Used DCodes :
+    D12
+*************************************************************
+
+*************************************************************
 Generating : Bottom Paste
       File : Tiresias_PCB.GBP
 
@@ -14,9 +103,10 @@ Generating : Bottom Paste
 
 Used DCodes :
     D20
+    D25
     D28
     D32
-    D79
+    D80
     D84
     D85
     D86
@@ -80,6 +170,7 @@ Used DCodes :
     D39
     D42
     D43
+    D48
     D49
     D52
     D56
@@ -149,7 +240,7 @@ Generating : Bottom Overlay
 
 
 Used DCodes :
-    D11
+    D10
     D12
     D13
     D14
@@ -178,6 +269,77 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
+Generating : Top Pad Master
+      File : Tiresias_PCB.GPT
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D64
+    D65
+    D74
+    D75
+*************************************************************
+
+*************************************************************
+Generating : Bottom Pad Master
+      File : Tiresias_PCB.GPB
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D20
+    D25
+    D28
+    D32
+    D64
+    D65
+    D74
+    D75
+    D79
+    D80
+    D81
+    D82
+    D83
+    D84
+    D85
+    D86
+    D87
+    D88
+    D89
+    D90
+    D91
+    D92
+*************************************************************
+
+*************************************************************
 Generating : Bottom Layer
       File : Tiresias_PCB.GBL
 
@@ -187,10 +349,11 @@ Generating : Bottom Layer
 
 
 Used DCodes :
-    D11
+    D10
     D12
     D14
     D20
+    D25
     D28
     D32
     D63
@@ -250,7 +413,7 @@ Generating : Int3 (SIG)
 
 
 Used DCodes :
-    D12
+    D10
     D13
     D63
     D66
@@ -272,7 +435,7 @@ Generating : Int2 (PWR)
 
 
 Used DCodes :
-    D12
+    D10
     D74
     D75
     D76
@@ -307,7 +470,7 @@ Generating : Top Layer
 
 
 Used DCodes :
-    D11
+    D10
     D12
     D13
     D14
@@ -351,11 +514,167 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
+Generating : Drill Drawing
+      File : Tiresias_PCB.GD1
+
+    Adding Drill Pair : Top Layer-Bottom Layer
+
+    Adding Layer      : Drill Drawing
+
+
+Used DCodes :
+    D16
+*************************************************************
+
+*************************************************************
+Generating : Drill Drawing
+      File : Tiresias_PCB.GD2
+
+    Adding Drill Pair : Top Layer-Int1 (GND)
+
+    Adding Layer      : Drill Drawing
+
+
+Used DCodes :
+    D16
+*************************************************************
+
+*************************************************************
+Generating : Drill Drawing
+      File : Tiresias_PCB.GD3
+
+    Adding Drill Pair : Int1 (GND)-Int2 (PWR)
+
+    Adding Layer      : Drill Drawing
+
+
+Used DCodes :
+    D16
+*************************************************************
+
+*************************************************************
+Generating : Drill Drawing
+      File : Tiresias_PCB.GD4
+
+    Adding Drill Pair : Int2 (PWR)-Int3 (SIG)
+
+    Adding Layer      : Drill Drawing
+
+
+Used DCodes :
+    D16
+*************************************************************
+
+*************************************************************
+Generating : Drill Drawing
+      File : Tiresias_PCB.GD5
+
+    Adding Drill Pair : Int3 (SIG)-Int4 (GND)
+
+    Adding Layer      : Drill Drawing
+
+
+Used DCodes :
+    D16
+*************************************************************
+
+*************************************************************
+Generating : Drill Drawing
+      File : Tiresias_PCB.GD6
+
+    Adding Drill Pair : Int4 (GND)-Bottom Layer
+
+    Adding Layer      : Drill Drawing
+
+
+Used DCodes :
+    D16
+*************************************************************
+
+*************************************************************
+Generating : Drill Guide
+      File : Tiresias_PCB.GG1
+
+    Adding Drill Pair : Top Layer-Bottom Layer
+
+    Adding Layer      : Drill Guide
+
+
+Used DCodes :
+    D16
+*************************************************************
+
+*************************************************************
+Generating : Drill Guide
+      File : Tiresias_PCB.GG2
+
+    Adding Drill Pair : Top Layer-Int1 (GND)
+
+    Adding Layer      : Drill Guide
+
+
+Used DCodes :
+    D16
+*************************************************************
+
+*************************************************************
+Generating : Drill Guide
+      File : Tiresias_PCB.GG3
+
+    Adding Drill Pair : Int1 (GND)-Int2 (PWR)
+
+    Adding Layer      : Drill Guide
+
+
+Used DCodes :
+    D16
+*************************************************************
+
+*************************************************************
+Generating : Drill Guide
+      File : Tiresias_PCB.GG4
+
+    Adding Drill Pair : Int2 (PWR)-Int3 (SIG)
+
+    Adding Layer      : Drill Guide
+
+
+Used DCodes :
+    D16
+*************************************************************
+
+*************************************************************
+Generating : Drill Guide
+      File : Tiresias_PCB.GG5
+
+    Adding Drill Pair : Int3 (SIG)-Int4 (GND)
+
+    Adding Layer      : Drill Guide
+
+
+Used DCodes :
+    D16
+*************************************************************
+
+*************************************************************
+Generating : Drill Guide
+      File : Tiresias_PCB.GG6
+
+    Adding Drill Pair : Int4 (GND)-Bottom Layer
+
+    Adding Layer      : Drill Guide
+
+
+Used DCodes :
+    D16
+*************************************************************
+
+*************************************************************
 Generating : Profile
       File : Tiresias_PCB.GM
 
 
 Used DCodes :
-    D114
+    D122
 *************************************************************
 
