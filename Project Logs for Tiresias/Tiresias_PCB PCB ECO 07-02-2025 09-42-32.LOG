@@ -1,0 +1,14 @@
+Added Component: Designator=C54(CAPC1005X04L)
+Add component (AddParameter): Name = "Class"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DigiKey link"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLCpcb link"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "2024/02/20"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser link"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "C0402-1µ0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Count"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1uF"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C54-1
+Added Pin To Net: NetName=VBAT Pin=C54-2

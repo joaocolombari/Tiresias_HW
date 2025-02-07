@@ -1,18 +1,21 @@
 Protel Design System Design Rule Check
-PCB File : C:\Users\Public\Documents\Altium\Tiresias\Tiresias_PCB.PcbDoc
-Date     : 31/01/2025
-Time     : 15:05:43
+PCB File : C:\Users\Public\Documents\Altium\Tiresias_HW\Tiresias_PCB.PcbDoc
+Date     : 07/02/2025
+Time     : 10:02:32
 
 Processing Rule : Clearance Constraint (Gap=0.1mm) (AsMM(ViaDiameter) < 0.3),(AsMM(ViaDiameter) < 0.3)
 Rule Violations :0
 
-Processing Rule : Clearance Constraint (Gap=0.127mm) ((InNamedPolygon('GND_L02_P002')) or (InNamedPolygon('VDD_L03_P031')) or (InNamedPolygon('Mid_Layer_2-GND')) or (InNamedPolygon('Bottom_Layer-GND'))),(InNet('RF'))
+Processing Rule : Clearance Constraint (Gap=0.051mm) (WithinRoom('ADAU1787_room')),(All)
 Rule Violations :0
 
 Processing Rule : Clearance Constraint (Gap=0.051mm) (WithinRoom('nrf5340_room')),(All - InNamedPolygon('GND_L02_P002') - InNamedPolygon('Bottom_Layer-GND') - InNamedPolygon('GND_L02_P002') - InNamedPolygon('VDD_L03_P031') - InNamedPolygon('VDD_L03_P031') - InNamedPolygon('GND_L05_P000'))
 Rule Violations :0
 
-Processing Rule : Clearance Constraint (Gap=0.051mm) (WithinRoom('ADAU1787_room')),(All)
+Processing Rule : Clearance Constraint (Gap=0.127mm) ((InNamedPolygon('GND_L02_P002')) or (InNamedPolygon('VDD_L03_P031')) or (InNamedPolygon('Mid_Layer_2-GND')) or (InNamedPolygon('Bottom_Layer-GND'))),(InNet('RF'))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.254mm) (All),(All)
 Rule Violations :0
 
 Processing Rule : Clearance Constraint (Gap=0.102mm) (All),(All)
@@ -21,22 +24,19 @@ Rule Violations :0
 Processing Rule : Clearance Constraint (Gap=0.127mm) ((InNamedPolygon('GND_L02_P002')) or (InNamedPolygon('VDD_L03_P031')) or (InNamedPolygon('Mid_Layer_2-GND')) or (InNamedPolygon('Bottom_Layer-GND'))),(All)
 Rule Violations :0
 
-Processing Rule : Clearance Constraint (Gap=0.254mm) (All),(All)
-Rule Violations :0
-
 Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
 
 Processing Rule : Un-Routed Net Constraint ( (All) )
 Rule Violations :0
 
-Processing Rule : Width Constraint (Min=0.254mm) (Max=0.546mm) (Preferred=0.254mm) (InNetClass('controlled_impedance'))
-Rule Violations :0
-
 Processing Rule : Width Constraint (Min=0.102mm) (Max=0.4mm) (Preferred=0.2mm) (All)
 Rule Violations :0
 
 Processing Rule : Width Constraint (Min=0.254mm) (Max=0.254mm) (Preferred=0.254mm) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.254mm) (Max=0.546mm) (Preferred=0.254mm) (InNetClass('controlled_impedance'))
 Rule Violations :0
 
 Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (isVia and innet('GND'))
@@ -57,4 +57,4 @@ Rule Violations :0
 
 Violations Detected : 0
 Waived Violations : 0
-Time Elapsed        : 00:00:02
+Time Elapsed        : 00:00:00
