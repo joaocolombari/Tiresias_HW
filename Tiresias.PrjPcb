@@ -834,31 +834,31 @@ Name=Assembly Outputs
 Description=
 TargetPrinter=NPI30F12F (HP Color LaserJet CP2025dn)
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
-OutputType1=Test Points For Assembly
-OutputName1=Test Point Report
+OutputType1=Assembly
+OutputName1=Assembly Drawings
 OutputDocumentPath1=
 OutputVariantName1=[No Variations]
 OutputDefault1=0
-OutputType2=Wire Bonding Table
-OutputName2=Wire Bonding Table Report
+PageOptions1=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+OutputType2=Pick Place
+OutputName2=Generates pick and place files
 OutputDocumentPath2=
 OutputVariantName2=[No Variations]
 OutputDefault2=0
-OutputType3=Assembly
-OutputName3=Assembly Drawings
+Configuration2_Name1=ForceUpdateSettings
+Configuration2_Item1=False
+Configuration2_Name2=OutputConfigurationParameter1
+Configuration2_Item2=Record=PickPlaceView|Units=Imperial|GenerateCSVFormat=False|GenerateTextFormat=True|ShowUnits=False|Separator=.|ExcludeFilterParam=False|IncludeVariations=False|IncludeStandardNoBOM=True|Filter= |FilterActive=False|YFlip=False|DifferentFootprints=False|Column#1=Name:Designator,Fixed:True,Metric:False,Visible:True,Sort:None,Position:0|Column#2=Name:Comment,Fixed:True,Metric:False,Visible:True,Sort:None,Position:1|Column#3=Name:Layer,Fixed:True,Metric:False,Visible:True,Sort:None,Position:2|Column#4=Name:Footprint,Fixed:True,Metric:False,Visible:True,Sort:None,Position:3|Column#5=Name:Footprint Description,Fixed:True,Metric:False,Visible:False,Sort:None,Position:4|Column#6=Name:Center-X,Fixed:True,Metric:True,Visible:True,Sort:None,Position:5|Column#7=Name:Center-Y,Fixed:True,Metric:True,Visible:True,Sort:None,Position:6|Column#8=Name:Rotation,Fixed:True,Metric:False,Visible:True,Sort:None,Position:7|Column#9=Name:Description,Fixed:True,Metric:False,Visible:True,Sort:None,Position:8|Column#10=Name:ComponentKind,Fixed:True,Metric:False,Visible:False,Sort:None,Position:9|Column#11=Name:Height,Fixed:True,Metric:True,Visible:False,Sort:None,Position:10|Column#12=Name:Ref-X,Fixed:True,Metric:True,Visible:False,Sort:None,Position:11|Column#13=Name:Ref-Y,Fixed:True,Metric:True,Visible:False,Sort:None,Position:12|Column#14=Name:Pad-X,Fixed:True,Metric:True,Visible:False,Sort:None,Position:13|Column#15=Name:Pad-Y,Fixed:True,Metric:True,Visible:False,Sort:None,Position:14|Column#16=Name:Variation,Fixed:True,Metric:False,Visible:False,Sort:None,Position:15|Column#17=Name:SymbolName_1,Fixed:False,Metric:False,Visible:False,Sort:None,Position:67,Type:0|Column#18=Name:Mfr_Name,Fixed:False,Metric:False,Visible:False,Sort:None,Position:44,Type:0|Column#19=Name:HelpURL,Fixed:False,Metric:False,Visible:False,Sort:None,Position:34,Type:0|Column#20=Name:Part Number,Fixed:False,Metric:False,Visible:False,Sort:None,Position:54,Type:0|Column#21=Name:MP,Fixed:False,Metric:False,Visible:False,Sort:None,Position:50,Type:0|Column#22=Name:Part number Norautron,Fixed:False,Metric:False,Visible:False,Sort:None,Position:56,Type:0|Column#23=Name:Supplier Part Number 2,Fixed:False,Metric:False,Visible:False,Sort:None,Position:66,Type:0|Column#24=Name:Manufacturer_Part_Number,Fixed:False,Metric:False,Visible:False,Sort:None,Position:42,Type:0|Column#25=Name:Mouser_Part_Number,Fixed:False,Metric:False,Visible:False,Sort:None,Position:48,Type:0|Column#26=Name:Mouser_Price-Stock,Fixed:False,Metric:False,Visible:False,Sort:None,Position:49,Type:0|Column#27=Name:LibraryName,Fixed:False,Metric:False,Visible:False,Sort:None,Position:38,Type:0|Column#28=Name:DeviceSetName,Fixed:False,Metric:False,Visible:False,Sort:None,Position:28,Type:0|Column#29=Name:Pin Count,Fixed:False,Metric:False,Visible:False,Sort:None,Position:58,Type:0|Column#30=Name:GateName_1,Fixed:False,Metric:False,Visible:False,Sort:None,Position:31,Type:0|Column#31=Name:DigiKey link,Fixed:False,Metric:False,Visible:False,Sort:None,Position:29,Type:0|Column#32=Name:Availability,Fixed:False,Metric:False,Visible:False,Sort:None,Position:19,Type:0|Column#33=Name:Note,Fixed:False,Metric:False,Visible:False,Sort:None,Position:51,Type:0|Column#34=Name:Supplier 1,Fixed:False,Metric:False,Visible:False,Sort:None,Position:63,Type:0|Column#35=Name:Published,Fixed:False,Metric:False,Visible:False,Sort:None,Position:60,Type:0|Column#36=Name:Mouser link,Fixed:False,Metric:False,Visible:False,Sort:None,Position:45,Type:0|Column#37=Name:Mouser Part Number,Fixed:False,Metric:False,Visible:False,Sort:None,Position:46,Type:0|Column#38=Name:Supplier Part Number 1,Fixed:False,Metric:False,Visible:False,Sort:None,Position:65,Type:0|Column#39=Name:ComponentLink2URL,Fixed:False,Metric:False,Visible:False,Sort:None,Position:25,Type:0|Column#40=Name:Latest Revision Date,Fixed:False,Metric:False,Visible:False,Sort:None,Position:36,Type:0|Column#41=Name:Pad Count,Fixed:False,Metric:False,Visible:False,Sort:None,Position:53,Type:0|Column#42=Name:Manufacturer,Fixed:False,Metric:False,Visible:False,Sort:None,Position:39,Type:0|Column#43=Name:Supplier 2,Fixed:False,Metric:False,Visible:False,Sort:None,Position:64,Type:0|Column#44=Name:MF,Fixed:False,Metric:False,Visible:False,Sort:None,Position:43,Type:0|Column#45=Name:Artikkelnr Noca,Fixed:False,Metric:False,Visible:False,Sort:None,Position:16,Type:0|Column#46=Name:Type,Fixed:False,Metric:False,Visible:False,Sort:None,Position:68,Type:0|Column#47=Name:Author,Fixed:False,Metric:False,Visible:False,Sort:None,Position:18,Type:0|Column#48=Name:Manufacturer_Name,Fixed:False,Metric:False,Visible:False,Sort:None,Position:41,Type:0|Column#49=Name:DeviceName,Fixed:False,Metric:False,Visible:False,Sort:None,Position:27,Type:0|Column#50=Name:ComponentLink2Description,Fixed:False,Metric:False,Visible:False,Sort:None,Position:24,Type:0|Column#51=Name:Component Class,Fixed:False,Metric:False,Visible:False,Sort:None,Position:21,Type:0|Column#52=Name:Geometry.Height,Fixed:False,Metric:False,Visible:False,Sort:None,Position:32,Type:0|Column#53=Name:Class,Fixed:False,Metric:False,Visible:False,Sort:None,Position:20,Type:0|Column#54=Name:ComponentLink1URL,Fixed:False,Metric:False,Visible:False,Sort:None,Position:23,Type:0|Column#55=Name:Part number IPS,Fixed:False,Metric:False,Visible:False,Sort:None,Position:55,Type:0|Column#56=Name:Datasheet Link,Fixed:False,Metric:False,Visible:False,Sort:None,Position:26,Type:0|Column#57=Name:Package,Fixed:False,Metric:False,Visible:False,Sort:None,Position:52,Type:0|Column#58=Name:Value,Fixed:False,Metric:False,Visible:False,Sort:None,Position:69,Type:0|Column#59=Name:Footprint Doc,Fixed:False,Metric:False,Visible:False,Sort:None,Position:30,Type:0|Column#60=Name:LatestRevisionDate,Fixed:False,Metric:False,Visible:False,Sort:None,Position:37,Type:0|Column#61=Name:Assembly,Fixed:False,Metric:False,Visible:False,Sort:None,Position:17,Type:0|Column#62=Name:Publisher,Fixed:False,Metric:False,Visible:False,Sort:None,Position:61,Type:0|Column#63=Name:Mouser Price/Stock,Fixed:False,Metric:False,Visible:False,Sort:None,Position:47,Type:0|Column#64=Name:ComponentLink1Description,Fixed:False,Metric:False,Visible:False,Sort:None,Position:22,Type:0|Column#65=Name:PartId,Fixed:False,Metric:False,Visible:False,Sort:None,Position:57,Type:0|Column#66=Name:RefDes,Fixed:False,Metric:False,Visible:False,Sort:None,Position:62,Type:0|Column#67=Name:Height,Fixed:False,Metric:False,Visible:False,Sort:None,Position:33,Type:0|Column#68=Name:Price,Fixed:False,Metric:False,Visible:False,Sort:None,Position:59,Type:0|Column#69=Name:JLCpcb link,Fixed:False,Metric:False,Visible:False,Sort:None,Position:35,Type:0|Column#70=Name:Manufacturer Part Number,Fixed:False,Metric:False,Visible:False,Sort:None,Position:40,Type:0|DocumentPath=C:\Users\Public\Documents\Altium\Tiresias_HW\Tiresias_PCB.PcbDoc
+OutputType3=Test Points For Assembly
+OutputName3=Test Point Report
 OutputDocumentPath3=
 OutputVariantName3=[No Variations]
 OutputDefault3=0
-PageOptions3=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType4=Pick Place
-OutputName4=Generates pick and place files
+OutputType4=Wire Bonding Table
+OutputName4=Wire Bonding Table Report
 OutputDocumentPath4=
 OutputVariantName4=[No Variations]
 OutputDefault4=0
-Configuration4_Name1=ForceUpdateSettings
-Configuration4_Item1=False
-Configuration4_Name2=OutputConfigurationParameter1
-Configuration4_Item2=Record=PickPlaceView|Units=Imperial|GenerateCSVFormat=False|GenerateTextFormat=True|ShowUnits=False|Separator=.|ExcludeFilterParam=False|IncludeVariations=False|IncludeStandardNoBOM=True|Filter= |FilterActive=False|YFlip=False|DifferentFootprints=False|Column#1=Name:Designator,Fixed:True,Metric:False,Visible:True,Sort:None,Position:0|Column#2=Name:Comment,Fixed:True,Metric:False,Visible:True,Sort:None,Position:1|Column#3=Name:Layer,Fixed:True,Metric:False,Visible:True,Sort:None,Position:2|Column#4=Name:Footprint,Fixed:True,Metric:False,Visible:True,Sort:None,Position:3|Column#5=Name:Footprint Description,Fixed:True,Metric:False,Visible:False,Sort:None,Position:4|Column#6=Name:Center-X,Fixed:True,Metric:True,Visible:True,Sort:None,Position:5|Column#7=Name:Center-Y,Fixed:True,Metric:True,Visible:True,Sort:None,Position:6|Column#8=Name:Rotation,Fixed:True,Metric:False,Visible:True,Sort:None,Position:7|Column#9=Name:Description,Fixed:True,Metric:False,Visible:True,Sort:None,Position:8|Column#10=Name:ComponentKind,Fixed:True,Metric:False,Visible:False,Sort:None,Position:9|Column#11=Name:Height,Fixed:True,Metric:True,Visible:False,Sort:None,Position:10|Column#12=Name:Ref-X,Fixed:True,Metric:True,Visible:False,Sort:None,Position:11|Column#13=Name:Ref-Y,Fixed:True,Metric:True,Visible:False,Sort:None,Position:12|Column#14=Name:Pad-X,Fixed:True,Metric:True,Visible:False,Sort:None,Position:13|Column#15=Name:Pad-Y,Fixed:True,Metric:True,Visible:False,Sort:None,Position:14|Column#16=Name:Variation,Fixed:True,Metric:False,Visible:False,Sort:None,Position:15|Column#17=Name:SymbolName_1,Fixed:False,Metric:False,Visible:False,Sort:None,Position:67,Type:0|Column#18=Name:Mfr_Name,Fixed:False,Metric:False,Visible:False,Sort:None,Position:44,Type:0|Column#19=Name:HelpURL,Fixed:False,Metric:False,Visible:False,Sort:None,Position:34,Type:0|Column#20=Name:Part Number,Fixed:False,Metric:False,Visible:False,Sort:None,Position:54,Type:0|Column#21=Name:MP,Fixed:False,Metric:False,Visible:False,Sort:None,Position:50,Type:0|Column#22=Name:Part number Norautron,Fixed:False,Metric:False,Visible:False,Sort:None,Position:56,Type:0|Column#23=Name:Supplier Part Number 2,Fixed:False,Metric:False,Visible:False,Sort:None,Position:66,Type:0|Column#24=Name:Manufacturer_Part_Number,Fixed:False,Metric:False,Visible:False,Sort:None,Position:42,Type:0|Column#25=Name:Mouser_Part_Number,Fixed:False,Metric:False,Visible:False,Sort:None,Position:48,Type:0|Column#26=Name:Mouser_Price-Stock,Fixed:False,Metric:False,Visible:False,Sort:None,Position:49,Type:0|Column#27=Name:LibraryName,Fixed:False,Metric:False,Visible:False,Sort:None,Position:38,Type:0|Column#28=Name:DeviceSetName,Fixed:False,Metric:False,Visible:False,Sort:None,Position:28,Type:0|Column#29=Name:Pin Count,Fixed:False,Metric:False,Visible:False,Sort:None,Position:58,Type:0|Column#30=Name:GateName_1,Fixed:False,Metric:False,Visible:False,Sort:None,Position:31,Type:0|Column#31=Name:DigiKey link,Fixed:False,Metric:False,Visible:False,Sort:None,Position:29,Type:0|Column#32=Name:Availability,Fixed:False,Metric:False,Visible:False,Sort:None,Position:19,Type:0|Column#33=Name:Note,Fixed:False,Metric:False,Visible:False,Sort:None,Position:51,Type:0|Column#34=Name:Supplier 1,Fixed:False,Metric:False,Visible:False,Sort:None,Position:63,Type:0|Column#35=Name:Published,Fixed:False,Metric:False,Visible:False,Sort:None,Position:60,Type:0|Column#36=Name:Mouser link,Fixed:False,Metric:False,Visible:False,Sort:None,Position:45,Type:0|Column#37=Name:Mouser Part Number,Fixed:False,Metric:False,Visible:False,Sort:None,Position:46,Type:0|Column#38=Name:Supplier Part Number 1,Fixed:False,Metric:False,Visible:False,Sort:None,Position:65,Type:0|Column#39=Name:ComponentLink2URL,Fixed:False,Metric:False,Visible:False,Sort:None,Position:25,Type:0|Column#40=Name:Latest Revision Date,Fixed:False,Metric:False,Visible:False,Sort:None,Position:36,Type:0|Column#41=Name:Pad Count,Fixed:False,Metric:False,Visible:False,Sort:None,Position:53,Type:0|Column#42=Name:Manufacturer,Fixed:False,Metric:False,Visible:False,Sort:None,Position:39,Type:0|Column#43=Name:Supplier 2,Fixed:False,Metric:False,Visible:False,Sort:None,Position:64,Type:0|Column#44=Name:MF,Fixed:False,Metric:False,Visible:False,Sort:None,Position:43,Type:0|Column#45=Name:Artikkelnr Noca,Fixed:False,Metric:False,Visible:False,Sort:None,Position:16,Type:0|Column#46=Name:Type,Fixed:False,Metric:False,Visible:False,Sort:None,Position:68,Type:0|Column#47=Name:Author,Fixed:False,Metric:False,Visible:False,Sort:None,Position:18,Type:0|Column#48=Name:Manufacturer_Name,Fixed:False,Metric:False,Visible:False,Sort:None,Position:41,Type:0|Column#49=Name:DeviceName,Fixed:False,Metric:False,Visible:False,Sort:None,Position:27,Type:0|Column#50=Name:ComponentLink2Description,Fixed:False,Metric:False,Visible:False,Sort:None,Position:24,Type:0|Column#51=Name:Component Class,Fixed:False,Metric:False,Visible:False,Sort:None,Position:21,Type:0|Column#52=Name:Geometry.Height,Fixed:False,Metric:False,Visible:False,Sort:None,Position:32,Type:0|Column#53=Name:Class,Fixed:False,Metric:False,Visible:False,Sort:None,Position:20,Type:0|Column#54=Name:ComponentLink1URL,Fixed:False,Metric:False,Visible:False,Sort:None,Position:23,Type:0|Column#55=Name:Part number IPS,Fixed:False,Metric:False,Visible:False,Sort:None,Position:55,Type:0|Column#56=Name:Datasheet Link,Fixed:False,Metric:False,Visible:False,Sort:None,Position:26,Type:0|Column#57=Name:Package,Fixed:False,Metric:False,Visible:False,Sort:None,Position:52,Type:0|Column#58=Name:Value,Fixed:False,Metric:False,Visible:False,Sort:None,Position:69,Type:0|Column#59=Name:Footprint Doc,Fixed:False,Metric:False,Visible:False,Sort:None,Position:30,Type:0|Column#60=Name:LatestRevisionDate,Fixed:False,Metric:False,Visible:False,Sort:None,Position:37,Type:0|Column#61=Name:Assembly,Fixed:False,Metric:False,Visible:False,Sort:None,Position:17,Type:0|Column#62=Name:Publisher,Fixed:False,Metric:False,Visible:False,Sort:None,Position:61,Type:0|Column#63=Name:Mouser Price/Stock,Fixed:False,Metric:False,Visible:False,Sort:None,Position:47,Type:0|Column#64=Name:ComponentLink1Description,Fixed:False,Metric:False,Visible:False,Sort:None,Position:22,Type:0|Column#65=Name:PartId,Fixed:False,Metric:False,Visible:False,Sort:None,Position:57,Type:0|Column#66=Name:RefDes,Fixed:False,Metric:False,Visible:False,Sort:None,Position:62,Type:0|Column#67=Name:Height,Fixed:False,Metric:False,Visible:False,Sort:None,Position:33,Type:0|Column#68=Name:Price,Fixed:False,Metric:False,Visible:False,Sort:None,Position:59,Type:0|Column#69=Name:JLCpcb link,Fixed:False,Metric:False,Visible:False,Sort:None,Position:35,Type:0|Column#70=Name:Manufacturer Part Number,Fixed:False,Metric:False,Visible:False,Sort:None,Position:40,Type:0|DocumentPath=C:\Users\Public\Documents\Altium\Tiresias_HW\Tiresias_PCB.PcbDoc
 
 [OutputGroup5]
 Name=Fabrication Outputs
@@ -1128,6 +1128,36 @@ OutputName12=Web Review Data
 OutputDocumentPath12=
 OutputVariantName12=
 OutputDefault12=0
+OutputType13=Ansoft Neutral
+OutputName13=Ansoft Neutral (AutoPCB)
+OutputDocumentPath13=
+OutputVariantName13=
+OutputDefault13=0
+OutputType14=HyperLynx
+OutputName14=HyperLynx (AutoPCB)
+OutputDocumentPath14=
+OutputVariantName14=
+OutputDefault14=0
+OutputType15=MathWorks
+OutputName15=MathWorks (AutoPCB)
+OutputDocumentPath15=
+OutputVariantName15=
+OutputDefault15=0
+OutputType16=Orcad v7 Capture Design
+OutputName16=Orcad v7 Capture Design (AutoSCH)
+OutputDocumentPath16=
+OutputVariantName16=
+OutputDefault16=0
+OutputType17=P-CAD ASCII
+OutputName17=P-CAD ASCII (AutoPCB)
+OutputDocumentPath17=
+OutputVariantName17=
+OutputDefault17=0
+OutputType18=P-CAD V16 Schematic Design
+OutputName18=P-CAD V16 Schematic Design (AutoSCH)
+OutputDocumentPath18=
+OutputVariantName18=
+OutputDefault18=0
 
 [OutputGroup10]
 Name=PostProcess Outputs
@@ -1677,56 +1707,58 @@ Net44=NetName=NetIC1_B1|NetColor=$00E8864A
 Net45=NetName=NetIC1_B2|NetColor=$00E8864A
 Net46=NetName=NetIC1_B6|NetColor=$00E8864A
 Net47=NetName=NetIC1_B7|NetColor=$00E8864A
-Net48=NetName=NetJ2_2|NetColor=clRed
-Net49=NetName=NetJ5_2|NetColor=clRed
-Net50=NetName=NetLD1_2|NetColor=clRed
-Net51=NetName=NetP1_10|NetColor=$00E8864A
-Net52=NetName=NetP1_2|NetColor=$00E8864A
-Net53=NetName=NetP1_4|NetColor=$00E8864A
-Net54=NetName=NetP1_6|NetColor=$00E8864A
-Net55=NetName=NetTP21_1|NetColor=$00E8864A
-Net56=NetName=NetTP22_1|NetColor=$00E8864A
-Net57=NetName=NetTP23_1|NetColor=$00E8864A
-Net58=NetName=NetTP24_1|NetColor=$00E8864A
-Net59=NetName=NetTP25_1|NetColor=$00E8864A
-Net60=NetName=NetTP26_1|NetColor=$00E8864A
-Net61=NetName=P0.08/TRACEDATA3|NetColor=$00E8864A
-Net62=NetName=P0.09/TRACEDATA2|NetColor=$00E8864A
-Net63=NetName=P0.10/TRACEDATA1|NetColor=$00E8864A
-Net64=NetName=P0.11/TRACEDATA0|NetColor=$00E8864A
-Net65=NetName=P0.12/TRACECLK|NetColor=$00E8864A
-Net66=NetName=P0.13/QSPI0|NetColor=$00E8864A
-Net67=NetName=P0.14/QSPI1|NetColor=$00E8864A
-Net68=NetName=P0.15/QSPI2|NetColor=$00E8864A
-Net69=NetName=P0.16/QSPI3|NetColor=$00E8864A
-Net70=NetName=P0.17/QSPI_CLK|NetColor=$00E8864A
-Net71=NetName=P0.18/QSPI_CS|NetColor=$00E8864A
-Net72=NetName=P1.02/TWI|NetColor=$00E8864A
-Net73=NetName=P1.03/TWI|NetColor=$00E8864A
-Net74=NetName=P1.12|NetColor=$00E8864A
-Net75=NetName=P1.13|NetColor=$00E8864A
-Net76=NetName=P1.14|NetColor=$00E8864A
-Net77=NetName=P1.15|NetColor=$00E8864A
-Net78=NetName=R\E\S\E\T\|NetColor=$00E8864A
-Net79=NetName=RECEIVER.HPOUTN0|NetColor=clYellow
-Net80=NetName=RECEIVER.HPOUTN1|NetColor=clYellow
-Net81=NetName=RECEIVER.HPOUTP0|NetColor=clYellow
-Net82=NetName=RECEIVER.HPOUTP1|NetColor=clYellow
-Net83=NetName=RF|NetColor=clLime
-Net84=NetName=SWD.RESET|NetColor=$00E8864A
-Net85=NetName=SWD.SWDCLK|NetColor=$00E8864A
-Net86=NetName=SWD.SWDIO|NetColor=$00E8864A
-Net87=NetName=SWD.SWO|NetColor=$00E8864A
-Net88=NetName=SWDCLK|NetColor=$00E8864A
-Net89=NetName=SWDIO|NetColor=$00E8864A
-Net90=NetName=VBAT|NetColor=clRed
-Net91=NetName=VBUS|NetColor=clRed
-Net92=NetName=VDD|NetColor=clRed
-Net93=NetName=VDD_LED|NetColor=clRed
-Net94=NetName=VDD_PMIC_0V9|NetColor=clRed
-Net95=NetName=VDD_PMIC_1V8|NetColor=clRed
-Net96=NetName=VDD_PMIC_1V8_ANALOG|NetColor=clRed
-Net97=NetName=VSYS|NetColor=clRed
+Net48=NetName=NetIC1_E4|NetColor=clYellow
+Net49=NetName=NetIC1_F5|NetColor=clYellow
+Net50=NetName=NetJ2_2|NetColor=clRed
+Net51=NetName=NetJ5_2|NetColor=clRed
+Net52=NetName=NetLD1_2|NetColor=clRed
+Net53=NetName=NetP1_10|NetColor=$00E8864A
+Net54=NetName=NetP1_2|NetColor=$00E8864A
+Net55=NetName=NetP1_4|NetColor=$00E8864A
+Net56=NetName=NetP1_6|NetColor=$00E8864A
+Net57=NetName=NetTP21_1|NetColor=$00E8864A
+Net58=NetName=NetTP22_1|NetColor=$00E8864A
+Net59=NetName=NetTP23_1|NetColor=$00E8864A
+Net60=NetName=NetTP24_1|NetColor=$00E8864A
+Net61=NetName=NetTP25_1|NetColor=$00E8864A
+Net62=NetName=NetTP26_1|NetColor=$00E8864A
+Net63=NetName=P0.08/TRACEDATA3|NetColor=$00E8864A
+Net64=NetName=P0.09/TRACEDATA2|NetColor=$00E8864A
+Net65=NetName=P0.10/TRACEDATA1|NetColor=$00E8864A
+Net66=NetName=P0.11/TRACEDATA0|NetColor=$00E8864A
+Net67=NetName=P0.12/TRACECLK|NetColor=$00E8864A
+Net68=NetName=P0.13/QSPI0|NetColor=$00E8864A
+Net69=NetName=P0.14/QSPI1|NetColor=$00E8864A
+Net70=NetName=P0.15/QSPI2|NetColor=$00E8864A
+Net71=NetName=P0.16/QSPI3|NetColor=$00E8864A
+Net72=NetName=P0.17/QSPI_CLK|NetColor=$00E8864A
+Net73=NetName=P0.18/QSPI_CS|NetColor=$00E8864A
+Net74=NetName=P1.02/TWI|NetColor=$00E8864A
+Net75=NetName=P1.03/TWI|NetColor=$00E8864A
+Net76=NetName=P1.12|NetColor=$00E8864A
+Net77=NetName=P1.13|NetColor=$00E8864A
+Net78=NetName=P1.14|NetColor=$00E8864A
+Net79=NetName=P1.15|NetColor=$00E8864A
+Net80=NetName=R\E\S\E\T\|NetColor=$00E8864A
+Net81=NetName=RECEIVER.HPOUTN0|NetColor=clYellow
+Net82=NetName=RECEIVER.HPOUTN1|NetColor=clYellow
+Net83=NetName=RECEIVER.HPOUTP0|NetColor=clYellow
+Net84=NetName=RECEIVER.HPOUTP1|NetColor=clYellow
+Net85=NetName=RF|NetColor=clLime
+Net86=NetName=SWD.RESET|NetColor=$00E8864A
+Net87=NetName=SWD.SWDCLK|NetColor=$00E8864A
+Net88=NetName=SWD.SWDIO|NetColor=$00E8864A
+Net89=NetName=SWD.SWO|NetColor=$00E8864A
+Net90=NetName=SWDCLK|NetColor=$00E8864A
+Net91=NetName=SWDIO|NetColor=$00E8864A
+Net92=NetName=VBAT|NetColor=clRed
+Net93=NetName=VBUS|NetColor=clRed
+Net94=NetName=VDD|NetColor=clRed
+Net95=NetName=VDD_LED|NetColor=clRed
+Net96=NetName=VDD_PMIC_0V9|NetColor=clRed
+Net97=NetName=VDD_PMIC_1V8|NetColor=clRed
+Net98=NetName=VDD_PMIC_1V8_ANALOG|NetColor=clRed
+Net99=NetName=VSYS|NetColor=clRed
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=-1|UseName=-1|InclAllRules=0

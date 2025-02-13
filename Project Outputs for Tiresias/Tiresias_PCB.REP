@@ -33,7 +33,7 @@ Generating : Mechanical 13
 
 
 Used DCodes :
-    D10
+    D11
     D16
     D113
     D119
@@ -48,7 +48,7 @@ Generating : Mechanical 7
 
 
 Used DCodes :
-    D11
+    D10
     D12
     D15
     D115
@@ -87,7 +87,7 @@ Generating : Mechanical 1
 
 
 Used DCodes :
-    D12
+    D10
 *************************************************************
 
 *************************************************************
@@ -168,7 +168,7 @@ Generating : Bottom Solder
 
 Used DCodes :
     D39
-    D42
+    D40
     D43
     D48
     D49
@@ -241,7 +241,7 @@ Generating : Bottom Overlay
 
 Used DCodes :
     D10
-    D12
+    D11
     D13
     D14
     D15
@@ -350,7 +350,7 @@ Generating : Bottom Layer
 
 Used DCodes :
     D10
-    D12
+    D11
     D14
     D20
     D25
@@ -413,7 +413,7 @@ Generating : Int3 (SIG)
 
 
 Used DCodes :
-    D10
+    D11
     D13
     D63
     D66
@@ -435,7 +435,7 @@ Generating : Int2 (PWR)
 
 
 Used DCodes :
-    D10
+    D11
     D74
     D75
     D76
@@ -471,7 +471,7 @@ Generating : Top Layer
 
 Used DCodes :
     D10
-    D12
+    D11
     D13
     D14
     D18

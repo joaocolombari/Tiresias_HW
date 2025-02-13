@@ -4,13 +4,18 @@ C:\Users\Public\Documents\Altium\Tiresias_HW\Project Outputs for Tiresias\Pick P
 ========================================================================================================================
 File Design Information:
 
-Date:       07/02/25
-Time:       14:09
-Revision:   01a67f469f37664d4053fce3eca10d74ff6e7aa4
+Date:       13/02/25
+Time:       13:02
+Revision:   7dcab6d9102647ed505f8eabedc412652e015598
 Variant:    No variations
 Units used: mil
 
 Designator Comment                                                                            Layer       Footprint                 Center-X(mil) Center-Y(mil) Rotation Description                                                                                                                                                   
+TP41       Ø1.0mm,SMD                                                                         TopLayer    TP_SMD_D1.0mm             66.929        855.315       90       "1.0mm circular SMD testpad"                                                                                                                                  
+TP40       Ø1.0mm,SMD                                                                         TopLayer    TP_SMD_D1.0mm             66.929        760.827       90       "1.0mm circular SMD testpad"                                                                                                                                  
+TP39       Ø1.0mm,SMD                                                                         TopLayer    TP_SMD_D1.0mm             300.197       999.016       90       "1.0mm circular SMD testpad"                                                                                                                                  
+TP38       Ø1.0mm,SMD                                                                         TopLayer    TP_SMD_D1.0mm             174.213       999.016       90       "1.0mm circular SMD testpad"                                                                                                                                  
+TP37       Ø1.5mm,SMD                                                                         BottomLayer TP_SMD_D1.5mm             1483.268      963.583       90       "1.5mm circular SMD testpad"                                                                                                                                  
 C54        1uF                                                                                BottomLayer CAPC1005X04L              1281.496      638.779       0        "Capacitor, X5R, ±5%"                                                                                                                                         
 P1         "Pin Header 2x5, 1.27mm Angular"                                                   BottomLayer HDR_2x5-SMD-1.27mm-ANG    1289.035      445.669       270      "Pin Header 2x5, 1.27mm (50mil), SMD, Keying Shroud Angular"                                                                                                  
 TP36       Ø1.0mm,SMD                                                                         TopLayer    TP_SMD_D1.0mm             379.921       1035.433      90       "1.0mm circular SMD testpad"                                                                                                                                  
@@ -85,7 +90,7 @@ TP5        Ø1.0mm,SMD                                                           
 TP4        Ø1.0mm,SMD                                                                         TopLayer    TP_SMD_D1.0mm             379.921       1105.315      90       "1.0mm circular SMD testpad"                                                                                                                                  
 TP3        Ø1.0mm,SMD                                                                         TopLayer    TP_SMD_D1.0mm             647.992       1175.197      90       "1.0mm circular SMD testpad"                                                                                                                                  
 TP2        Ø1.0mm,SMD                                                                         TopLayer    TP_SMD_D1.0mm             379.921       1175.197      90       "1.0mm circular SMD testpad"                                                                                                                                  
-TP1        Ø1.5mm,SMD                                                                         BottomLayer TP_SMD_D1.5mm             1482.284      909.449       90       "1.5mm circular SMD testpad"                                                                                                                                  
+TP1        Ø1.5mm,SMD                                                                         BottomLayer TP_SMD_D1.5mm             1483.268      857.284       90       "1.5mm circular SMD testpad"                                                                                                                                  
 SW2        "PB SW"                                                                            TopLayer    KLS-TS3401                1403.543      599.409       180      "Tactile Switch, SPNO, SMD, 160gf, 4.2x3.3x2.5mm"                                                                                                             
 SW1        "PB SW"                                                                            TopLayer    KLS-TS3401                1399.606      818.898       180      "Tactile Switch, SPNO, SMD, 160gf, 4.2x3.3x2.5mm"                                                                                                             
 SB12       Solderbridge                                                                       TopLayer    Solderbridge              162.441       629.836       90       Solderbridge                                                                                                                                                  
