@@ -8,7 +8,9 @@
 </p>
 
 <div align="center">
-  <img src="https://img.shields.io/badge/research-EESC_USP-blue?style=for-the-badge" alt="USP">
+  <img src="https://img.shields.io/badge/research-EESC_USP-blue" alt="USP">
+  <img src="https://img.shields.io/badge/License-CERN_OHL--S-green" alt="CERN">
+  
 </div>
 
 ## ☕️ Introduction
