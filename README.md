@@ -69,7 +69,7 @@ Firmware is available and documented in the
 <table>
   <tr>
     <td align="center">
-      <a href="https://www.linkedin.com/in/felipepimentab/">
+      <a href="https://www.linkedin.com/in/joaocolombari/">
         <img src="https://avatars.githubusercontent.com/u/105496210?v=4" width="100px;" alt="Felipe Pimenta Bernardo on LinkedIn"/><br>
         <sub>
           <b>João Colombari</b>
@@ -77,7 +77,7 @@ Firmware is available and documented in the
       </a>
     </td>
     <td align="center">
-      <a href="https://www.linkedin.com/in/joaocolombari/">
+      <a href="https://www.linkedin.com/in/felipepimentab/">
         <img src="https://avatars.githubusercontent.com/u/80967474?v=4" width="100px;" alt="João Colombari on LinkedIn"/><br>
         <sub>
           <b>Felipe Pimenta Bernardo</b>
