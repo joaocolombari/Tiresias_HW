@@ -44,7 +44,9 @@ The project uses a [nRF5340 SoC](https://www.nordicsemi.com/Products/nRF5340) fr
 - Versatile I/O interface for seamless development;
 - Compact 40x25mm six-layer PCB for streamlined deployment.
 
-
+<p align="center">
+  <img src="tiresias_render.PNG" width="1000px">
+</p>
 
 ### Firmware overview
 
