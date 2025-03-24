@@ -54,7 +54,7 @@ The project uses a [nRF5340 SoC](https://www.nordicsemi.com/Products/nRF5340) fr
 
 > TODO: finish the firmware overview section
 
-Firmware is available and documented in the 
+Firmware is available and documented in the [Tiresias Firmware Repo](https://github.com/felipepimentab/tiresias-fw).
 
 ## 📮 Acknowledgments
 
