@@ -52,9 +52,7 @@ The project uses a [nRF5340 SoC](https://www.nordicsemi.com/Products/nRF5340) fr
 
 > TODO: finish the firmware overview section
 
-The nRF5340 SoC runs the Zephyr RTOS...
-
-The program for the ADAU1787 is built using the SigmaStudio software provided by Analog Devices. It allows the DSP to be graphically programmed and have its program exported as a header file for loading via I2C.
+Firmware is available and documented in the 
 
 ## 📝 License
 
@@ -62,22 +60,41 @@ The program for the ADAU1787 is built using the SigmaStudio software provided by
 
 ## 📮 Acknowledgments
 
-- EESC-USP: For providing the infrastructure and support for this research.
-- Nordic Semiconductor: For providing the nRF5340 Audio and nRF5340 Development Kits (DK) used in this project and extensive support.
-- Analog Devices: For providing the ADAU1787 codec used in this project and extensive support.
+- **EESC-USP**: For providing the infrastructure and support for this research.
+- **Nordic Semiconductor**: For providing the nRF5340 Audio and nRF5340 Development Kits (DK) used in this project and extensive support.
+- **Analog Devices**: For providing the ADAU1787 codec used in this project and extensive support.
 
 ## 👥 Contributors
 
 <table>
   <tr>
     <td align="center">
+      <a href="https://www.linkedin.com/in/felipepimentab/">
+        <img src="https://avatars.githubusercontent.com/u/105496210?v=4" width="100px;" alt="Felipe Pimenta Bernardo on LinkedIn"/><br>
+        <sub>
+          <b>João Colombari</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
       <a href="https://www.linkedin.com/in/joaocolombari/">
-        <img src="https://media.licdn.com/dms/image/v2/D4D03AQFsZ0xGEuZxrg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1692278514805?e=1730937600&v=beta&t=4HyZxSg3sPDtpvB7AkE4bi-QBfpsZywh1Njb9Q2T2sY" width="100px;" alt="João Colombari on LinkedIn"/><br>
+        <img src="https://avatars.githubusercontent.com/u/80967474?v=4" width="100px;" alt="João Colombari on LinkedIn"/><br>
+        <sub>
+          <b>Felipe Pimenta Bernardo</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/brunochenriques">
+        <img src="https://avatars.githubusercontent.com/u/182001139?v=4" width="100px;" alt="Bruno Henriques on GitHub"/><br>
+        <sub>
+          <b>Bruno Henriques</b>
         </sub>
       </a>
     </td>
   </tr>
 </table>
+
 
 ## 🤝 Contributing
 
