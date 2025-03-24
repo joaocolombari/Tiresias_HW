@@ -1,22 +1,23 @@
-# Tiresias Hardware
+<div align="center">
+  <h1>Tiresias Hardware</h1>
+   <p>Altium Designer Hardware files for the Tiresias Hearing Aid project </p>
+</div>
 
-![USP](https://img.shields.io/badge/research-EESC_USP-blue?style=for-the-badge)
+<p align="center">
+  <img src="tiresias_silk.png" width="300px">
+</p>
 
-Altium Hardware files for the Tiresias Hearing Aid project 
+<div align="center">
+  <img src="https://img.shields.io/badge/research-EESC_USP-blue?style=for-the-badge" alt="USP">
+</div>
 
 ## ☕️ Introduction
 
-This repository contains the Altium Project Directory for the Tiresias Hearing Aid Development Board. 
+This repository contains the Altium Designer Project for the Tiresias Hearing Aid Development Board. 
 
 The Tiresias project is a Brazilian research initiative conducted at [EESC-USP](https://www.eesc.usp.br/) by MSc students and its goal is to develop an open-source national technology for hearing aid applications using off-the-shelf components.
 
-The hardware is based on the Nordic Semiconductor's **nRF5340 SoC** and integrates:
-
--  **Analog Devices ADAU1787** audio codec with integrated digital signal processing (DSP) instructions for real-time signal processing;
--  **Multiple MEMS microphones** for beamforming and noise reduction applications;
--  **Knowless Voice Processing Unit** for self-speech recognition and adaptation;
--  **Bosch BMI270** Inertial Measurement Unit for motion and physiological data monitoring;
--  Onboard **Nordic nPM1100** battery management system for portable operation.
+The hardware is based on the Nordic Semiconductor's **nRF5340 SoC** and integrates an **Analog Devices ADAU1787** audio codec, multiple microphones and sensors for assistive technologies development.
 
 ### About the Tiresias Project
 
@@ -32,11 +33,18 @@ The Tiresias project is an innovative effort to create an open-source and access
 
 ### Hardware overview
 
-The project uses a [nRF5340 SoC](https://www.nordicsemi.com/Products/nRF5340) from [Nordic Semiconductors](https://www.nordicsemi.com). It contains an application proccessor for handling the main functions and a dedicated network processor for handling Bluetooth Low Energy (BLE) connectivity.
+The project uses a [nRF5340 SoC](https://www.nordicsemi.com/Products/nRF5340) from [Nordic Semiconductors](https://www.nordicsemi.com). It contains an **application proccessor** for handling the main functions and a dedicated **network processor** for handling Bluetooth Low Energy (BLE) connectivity. Moreover, the design integrates:
 
-For digital audio processing, the [ADAU1787 Audio Codec](https://www.analog.com/en/products/adau1787.html) from [Analog Devices](https://www.analog.com/en/index.html) provides speed and efficiency with its SigmaDSP audio processing core and FastDSP audio processing engine.
+- **[ADAU1787 Audio Codec](https://www.analog.com/en/products/adau1787.html)**  audio codec from [Analog Devices](https://www.analog.com/en/index.html) with integrated digital signal processing (DSP) instructions for real-time signal processing;
+- Onboard **Nordic [nPM1100 PMIC](https://www.nordicsemi.com/Products/nPM1100)** battery management system for portable operation;
+-  **Multiple [AMM-3742-T-WP-R MEMS microphones](https://puiaudio.com/product/microphones/amm-3742-t-wp-r)** from [PUI Audio](https://puiaudio.com/) for beamforming and noise reduction applications;
+-  **[V2S200D](https://www.mouser.com/datasheet/2/218/v2s200d_user_guide-3179748.pdf) Digital Voice Vibration Sensor** from [Knowless](https://www.knowles.com/) for self-speech recognition and adaptation; 
+-  **[BMI270[(https://www.bosch-sensortec.com/products/motion-sensors/imus/bmi270/) Inertial Measurement Unit** from [Bosch](https://www.bosch-sensortec.com/) for motion and physiological data monitoring;
+-  **[MX25R1635](https://www.mxic.com.tw/zh-tw/flash-memory-solutions/automotive/Pages/spec.aspx?p=MX25R1635F&m=Automotive&n=PM2744) 16Mb Flash Memory** from [Macronix International{(https://www.mxic.com.tw/en-us/Pages/default.aspx);
+- Versatile I/O interface for seamless development;
+- Compact 40x25mm six-layer PCB for streamlined deployment.
 
-The ADAU1787 is controlled via I2C by the nRF5340, which also handles BLE connection for wirelles operation.
+
 
 ### Firmware overview
 
