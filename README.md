@@ -56,10 +56,6 @@ The project uses a [nRF5340 SoC](https://www.nordicsemi.com/Products/nRF5340) fr
 
 Firmware is available and documented in the 
 
-## 📝 License
-
-> TODO: add lic file
-
 ## 📮 Acknowledgments
 
 - **EESC-USP**: For providing the infrastructure and support for this research.
@@ -108,3 +104,16 @@ For any inquiries or further information, please contact us on LinkedIn by click
 
 Thank you for your interest in the Tiresias project!
 
+## 📝 License
+
+This project is licensed under the **CERN Open Hardware License - Strongly Reciprocal (CERN OHL-S)**.
+
+You may use, modify, and distribute the hardware and software covered by this license under the terms specified in the license.
+
+### Summary of the CERN OHL-S:
+
+- You are free to use, modify, and distribute the hardware and/or software, provided that any derivative works are also licensed under the **CERN OHL-S**.
+- If you distribute modified versions of the hardware or software, you must make the modifications available under the same license, and the modified version must include a clear notice stating that it has been modified.
+- This license includes a strong reciprocity requirement, meaning that if you use the design in a commercial product, you must make the corresponding source available.
+
+For the full text of the license, please see the [LICENSE](LICENSE) file.
