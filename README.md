@@ -13,25 +13,38 @@
   
 </div>
 
-## ☕️ Introduction
+## Introduction
 
 This repository contains the Altium Designer Project for the Tiresias Hearing Aid Development Board. 
 
-The Tiresias project is a Brazilian research initiative conducted at [EESC-USP](https://www.eesc.usp.br/) by MSc students and its goal is to develop an open-source national technology for hearing aid applications using off-the-shelf components.
+The Tiresias project is part a partnership between the Brazilian Schools [FOB-USP](https://www1.fob.usp.br) and [EESC-USP](https://www.eesc.usp.br/) aiming to adress some of the Brazilian healthcare system's demands. Conduced by the [GMETA](https://sel.eesc.usp.br/jcarmo/metamaterials/) R&D Group, it aims to develop an open-source national technology for hearing aid applications using off-the-shelf components.
 
-The hardware is based on the Nordic Semiconductor's **nRF5340 SoC** and integrates an **Analog Devices ADAU1787** audio codec, multiple microphones and sensors for assistive technologies development.
+Tiresias is a low-power, resource-constrained open-source development board for hearing aid prototyping. It integrates an easy-to-program audio codec supporting both standard hearing aid functions — such as nonlinear amplitude compression and multichannel filtering — and advanced processing techniques, including adaptive filtering and beamforming for noise reduction and speech enhancement.
 
-### About the Tiresias Project
-
-The Tiresias project is an innovative effort to create an open-source and accessible hearing aid solution tailored to the needs of the Brazilian population. Our aim is to reduce dependency on expensive proprietary technologies by leveraging widely available components and state-of-the-art design practices.
+## System Architecture
 
 ### Key Features
 
-- **Connectivity**: Utilizes the Nordic nRF5340 SoC for Bluetooth Low Energy (BLE) communication, ensuring seamless wireless connectivity.
-- **Audio Processing**: Integrates the Analog Devices ADAU1787 Audio Codec for high-quality audio processing, essential for effective hearing aid functionality.
-- **Open-Source**: All code and design files are open-source, allowing for community collaboration and transparency in the development process.
+- **Advanced Signal Processing**
+  - Multichannel compression for improved speech intelligibility
+  - Adaptive microphone directivity (beamforming, cardioid)
+  - Noise reduction using directional microphone arrays
 
-## 🛠️ Getting Started
+- **Wireless Connectivity & IoT Integration**
+  - Bluetooth LE Audio (BT 5.4) with LC3 codec support
+  - Isochronous Channels for synchronized, low-latency audio streaming
+  - Support for binaural and Auracast™ systems
+  - Remote configuration and smartphone/device interaction
+
+- **Sensor Integration**
+  - Voice Pick-Up Units (VPU): Bone-conduction speech capture for noisy environments
+  - MEMS Microphones: Multi-microphone, low-power setups
+  - Inertial Measurement Units (IMUs): Head tracking, ExG augmentation, fall detection, and health monitoring
+
+- **Power Management**
+  - Support for rechargeable Li-Po batteries
+  - Power Management ICs (PMICs) for voltage regulation and safe charging
+
 
 ### Hardware overview
 
@@ -52,17 +65,48 @@ The project uses a [nRF5340 SoC](https://www.nordicsemi.com/Products/nRF5340) fr
 
 ### Firmware overview
 
-> TODO: finish the firmware overview section
-
 Firmware is available and documented in the [Tiresias Firmware Repo](https://github.com/felipepimentab/tiresias-fw).
 
-## 📮 Acknowledgments
+## Usage 
 
-- **EESC-USP**: For providing the infrastructure and support for this research.
+<p align="center">
+  <img src="croqui.png" width="1000px">
+</p>
+
+### Target User
+
+Tiresias can be applied in hearing aid **researchers and product developers**. It provides a flexible and accessible tool for researchers and innovators in the field of hearing solutions, as well as for consumer audio designers.
+
+### How to use it
+
+Tiresias is built using Nordic Semiconductor's **nRF Connect Software Development Kit (NCS)**, which integrates the **Zephyr Real-Time Operating System**. For the audio processing scheme on the DSP, Analog Devices offers the **SigmaStudio SDK** for its family of audio processors, which features a GUI that enables the user to configure fixed-function processors. In the firmware repository a Driver for the ADAU1787 has been developed so that the user can flash the application usign the nRF processor. 
+
+Thus, **software-wize**, make shure you have:
+
+- Nordic [nRF Connect SDK](https://www.nordicsemi.com/Products/Development-software/nRF-Connect-SDK/GetStarted#infotabs)
+- Analog Devices [SigmaStudio](https://www.analog.com/en/resources/evaluation-hardware-and-software/embedded-development-software/ss_sigst_02.html)
+- Firmware repository content 
+
+Tiresias has no interfae microprocessor, so it is loaded uding its Serial Write Debug interface (10-pin, 1.27mm), which can be controlled using a Jlink programmer or another microprocessor acting as such (a nRF5340 in another DK, for instance). 
+
+For its first version, we decided to use external speaker sets, so the user must have a balanced armature or an in-ear phone. A good setup for using it would be the one shown in the figure above, that holds a Tiresias PCB on each of the user's temples and connects them to in-ear phones. This will be soonly implemented and made publically available. 
+
+So, **hardware-wize**:
+
+- A Jlink debuger 
+- Speakers of some kind
+
+## Funding
+
+To the present, this project has been completelly financed by the University of São Paulo.
+
+## Acknowledgments
+
+- **EESC-USP**: For providing the infrastructure and finantial support for this research.
 - **Nordic Semiconductor**: For providing the nRF5340 Audio and nRF5340 Development Kits (DK) used in this project and extensive support.
 - **Analog Devices**: For providing the ADAU1787 codec used in this project and extensive support.
 
-## 👥 Contributors
+## Contributors
 
 <table>
   <tr>
@@ -94,15 +138,9 @@ Firmware is available and documented in the [Tiresias Firmware Repo](https://git
 </table>
 
 
-## 🤝 Contributing
-
-Contributions are welcome! Fork the repository, create a feature branch, make your changes, and open a pull request.
-
-## 📩 Contact
+## Contact
 
 For any inquiries or further information, please contact us on LinkedIn by clicking on our profiles above.
-
-Thank you for your interest in the Tiresias project!
 
 ## 📝 License
 
