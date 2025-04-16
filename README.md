@@ -140,7 +140,9 @@ To the present, this project has been completelly financed by the University of 
 
 ## Contact
 
-For any inquiries or further information, please contact us on LinkedIn by clicking on our profiles above.
+Feel free to reach out through our LinkedIn profiles (linked above) or contact us directly via email:
+
+- João Carlet – [jvccarlet@usp.br](mailto:jvccarlet@usp.br)
 
 ## 📝 License
 
