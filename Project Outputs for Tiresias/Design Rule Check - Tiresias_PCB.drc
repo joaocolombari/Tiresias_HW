@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\Public\Documents\Altium\Tiresias_HW\Tiresias_PCB.PcbDoc
-Date     : 13/02/2025
-Time     : 12:54:53
+Date     : 23/06/2025
+Time     : 12:46:31
 
 Processing Rule : Clearance Constraint (Gap=0.1mm) (AsMM(ViaDiameter) < 0.3),(AsMM(ViaDiameter) < 0.3)
 Rule Violations :0
